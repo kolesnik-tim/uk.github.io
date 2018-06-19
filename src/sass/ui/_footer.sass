@@ -1,2 +1,108 @@
 .footer
-  
+  background: $hunter-green
+  padding: 75px 0 45px
+  h3
+    margin-bottom: 10px
+    a
+      font-family: 'SF Pro Display'
+      font-size: 18px
+      font-weight: 500
+      color: $very-light-pink
+  ul
+    margin-bottom: 30px
+  li
+    a
+      font-family: 'SF Pro Display'
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.63
+      color: $sandy
+      display: block
+  p
+    font-family: 'SF Pro Display'
+    font-size: 14px
+    line-height: 1.14
+    color: $very-light-pink
+  &__contacts
+    margin-top: 8px
+    a
+      font-family: 'SF Pro Display'
+      font-size: 24px
+      font-weight: 500
+      line-height: 1.4
+      color: $very-light-pink
+      display: block
+      &.mail
+        font-size: 18px
+        font-weight: normal
+        line-height: normal
+        color: $sandy
+        margin-top: 15px
+        margin-bottom: 45px
+    span
+      font-family: 'SF Pro Display'
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.43
+      color: $dark-khaki
+      display: block
+      margin-bottom: 15px
+    div
+      width: 195px
+      height: 40px
+      border-radius: 6px
+      border: solid 1px #644f43
+      +center-y
+      position: relative
+      left: 100%
+      transform: translate(-100%)
+      padding: 10px
+      input
+        width: 100%
+        background: none
+        font-family: 'SF Pro Display'
+        font-size: 16px
+        color: $very-light-pink
+        &::placeholder
+          color: $very-light-pink
+      i
+        font-size: 20px
+        color: $sandy
+        cursor: pointer
+  &__logo
+    width: 100%
+    height: 70px
+    +center
+    position: relative
+    margin-bottom: 40px
+    img
+      width: 100%
+    &__img
+      width: 47px
+      position: absolute
+      top: 55%
+      transform: translate(0, -50%)
+      background: $hunter-green
+  &__social
+    +center
+    a
+      margin-right: 20px
+      &:last-child
+        margin-right: 0
+    i
+      color: $sandy
+      font-size: 20px
+  &__author
+    a
+      +center-y
+      justify-content: flex-end
+      span
+        font-family: 'SF Pro Display'
+        font-size: 14px
+        line-height: 1.14
+        color: $very-light-pink
+        text-align: right
+      i
+        font-size: 30px
+        color: rgba($sandy, 0.9)
+        margin-left: 12px

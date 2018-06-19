@@ -1,2 +1,139 @@
 .header
-  
+  position: absolute
+  top: 0
+  width: 100%
+  .menu-open
+    width: 30px
+    height: 30px
+    display: inline-flex
+    margin-right: 25px
+    +r(767)
+      left: 20px
+      position: absolute
+    &.active
+      span
+        background: transparent
+        &:before
+          width: 30px
+          transform: rotate(315deg)
+          top: 0
+        &:after
+          width: 30px
+          transform: rotate(-315deg)
+          top: 0
+    span
+      width: 15px
+      height: 2px
+      background: $mud-brown
+      display: block
+      position: relative
+      top: 15px
+      &:before
+        content: ''
+        position: absolute
+        width: 23px
+        height: 2px
+        top: -10px
+        background: $mud-brown
+        left: 0
+        transition: all 0.5s
+      &:after
+        content: ''
+        position: absolute
+        top: 10px
+        width: 30px
+        height: 2px
+        background: $mud-brown
+        left: 0
+        transition: all 0.5s
+  a.phone
+    font-family: 'Anglecia Pro Title'
+    font-size: 22px
+    font-weight: 500
+    color: $mud-brown
+    &-white
+      color: $white 
+  &__toolbar
+    height: 35px
+    width: 100%
+    padding: 0 15px
+    background: $hunter-green
+    +center-y
+    justify-content: flex-end
+    position: fixed
+    top: 0px
+    z-index: 15
+    a
+      font-family: 'SF Pro Display'
+      font-size: 14px
+      color: $white
+      +center
+      position: relative
+      margin-right: 10px
+      &:first-child
+        border-bottom: 1px dashed $white
+        margin-right: 60px
+      img
+        padding-left: 10px
+        position: absolute
+        right: -30px
+      i
+        font-size: 15px
+        color: $white
+        padding-left: 9px
+  &__scroll
+    position: fixed
+    top: -70px
+    width: 100%
+    padding: 0px 15px
+    height: 70px
+    background: $white
+    +center-y
+    z-index: 14
+    transition: all 0.9s
+    &.active
+      top: 35px
+    .row
+      width: 100%
+    &__logo
+      img
+        margin-bottom: -10px
+    &__block
+      +center-y
+    p
+      font-family: 'Anglecia Pro Title'
+      font-size: 16px
+      font-weight: 500
+      color: $mud-brown
+    i
+      color: $mud-brown
+      font-size: 13px
+      margin-right: 20px
+  &__top
+    position: absolute
+    top: 35px
+    width: 100%
+    height: 70px
+    padding: 0px 15px
+    +center-y
+    justify-content: space-between
+    z-index: 9
+    nav
+      flex: 1
+      margin: 0 40px
+      margin-right: 60px
+      ul
+        +center-y
+        justify-content: space-between
+        a
+          font-family: 'Anglecia Pro Title'
+          font-size: 16px
+          font-weight: 500
+          color: $white
+        i
+          color: $white
+          font-size: 15px
+          padding-left: 10px
+    a.phone
+      width: 180px
+      text-align: right

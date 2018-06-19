@@ -1,33 +1,47 @@
 html
 body
   font-size: 24px
-
+  font-family: 'Anglecia Pro Text'
+  font-size: 24px
   // -webkit-text-size-adjust: 100%
   // -ms-text-size-adjust: 100%
   // -webkit-font-smoothing: antialiased !important
   // text-rendering: optimizelegibility
   // -moz-osx-font-smoothing: grayscale
   box-sizing: border-box
+*
+  margin: 0
+  padding: 0
+.out
+  padding-top: 35px
+  position: relative
 .container
   width: 100% !important
-  max-width: 920px
+  max-width: 950px
   box-sizing: border-box
   +r(1024)
     padding: 0 15px
 a
   text-decoration: none
-
-.out
-  margin-top: 100px
-h1
-  font-weight: bold
-  line-height: 1
-  letter-spacing: 3px
-  font-size: 100px
-  padding-top: 20px
-  margin-bottom: 85px
-  +r(767)
-    font-size: 50px
+  transition: all 0.3s
 .heading
   h2
-    font-size: 80px
+    font-family: 'Anglecia Pro Title'
+    font-size: 60px
+    font-weight: 500
+    text-align: center
+    color: $mud-brown
+  p
+    font-family: 'Anglecia Pro Text'
+    font-size: 24px
+    font-weight: 300
+    line-height: 1.25
+    text-align: center
+    color: $mud
+.bg-line
+  width: 100%
+  background: url('../img/separation-line-mini.svg')
+  background-position: 50% 0
+  height: 7px
+  margin-top: 85px
+  margin-bottom: 65px

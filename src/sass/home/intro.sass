@@ -1,0 +1,66 @@
+.intro
+  background: url('http://via.placeholder.com/1200x800')
+  background-repeat: no-repeat
+  background-size: cover
+  padding-top: 70px
+  padding-bottom: 150px
+  position: relative
+  &:before
+    content: ''
+    height: 110px
+    width: 100%
+    background: url('../img/wave-top.svg') no-repeat
+    position: absolute
+    bottom: 0
+    background-position: 45% 100%
+    background-size: cover
+  &__logo
+    margin-top: 20px
+    margin-bottom: 40px
+    margin-left: 90px
+  &__swiper
+    position: relative
+    .swiper
+      &-container
+        width: 540px
+        margin: 0
+        margin-left: 110px
+        padding-top: 40px
+      &-slide
+        h2
+          font-family: 'Anglecia Pro Title'
+          font-size: 60px
+          font-weight: 500
+          color: $white
+          margin-bottom: 10px
+        p
+          font-family: 'Anglecia Pro Text'
+          font-size: 24px
+          font-weight: 300
+          line-height: 1.25
+          color: $white
+          margin-bottom: 45px
+      &-pagination
+        +center-y
+        top: 0
+        bottom: auto
+        &-bullet
+          width: 10px
+          height: 10px
+          background: $white
+          opacity: 1
+          border: none
+          &-active
+            background: none
+            width: 12px
+            height: 12px
+            border: 2px solid $white
+  &__down
+    margin-top: 40px
+    +center
+    span
+      font-family: 'SF Pro Display'
+      font-size: 12px
+      color: $white
+    img
+      margin: 0 10px
