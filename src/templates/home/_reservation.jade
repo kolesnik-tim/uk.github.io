@@ -1,0 +1,15 @@
+section.reservation
+  .container
+    .row
+      .col-xs-12
+        .heading
+          h2 Забронируйте<br>отдых со скидкой!
+          p Оставьте ваши контактные данные, чтобы мы могли связаться с Вами и уточнить все необходимые данные.
+    form(action="").form
+      .form__content
+        .form__block
+          input(type="text" placeholder="Как к Вам обращаться?")
+        .form__block.form__block-tel
+          input(type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _").phone
+          span Номер телефона
+      a(href="#").btn.btn-sandy Забронировать
