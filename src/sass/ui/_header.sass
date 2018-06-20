@@ -22,7 +22,7 @@
           transform: rotate(-315deg)
           top: 0
     span
-      width: 15px
+      width: 16px
       height: 2px
       background: $mud-brown
       display: block
@@ -31,7 +31,7 @@
       &:before
         content: ''
         position: absolute
-        width: 23px
+        width: 26px
         height: 2px
         top: -10px
         background: $mud-brown
@@ -41,7 +41,7 @@
         content: ''
         position: absolute
         top: 10px
-        width: 30px
+        width: 22px
         height: 2px
         background: $mud-brown
         left: 0
@@ -118,6 +118,13 @@
     +center-y
     justify-content: space-between
     z-index: 9
+    .menu-open
+      span
+        background: $white
+        &:before
+          background: $white
+        &:after
+          background: $white
     nav
       flex: 1
       margin: 0 40px

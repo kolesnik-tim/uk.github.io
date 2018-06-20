@@ -1,0 +1,73 @@
+.water, .clay
+  background: $very-light-pink
+  overflow: hidden
+  position: relative
+  .heading
+    margin-bottom: 60px
+    align-items: flex-start
+    p
+      text-align: left
+  &__block
+    +center-y
+    margin-bottom: 30px
+    img
+      height: 40px
+    p
+      font-family: 'SF Pro Display'
+      font-size: 16px
+      line-height: 1.25
+      color: $dark-khaki
+      margin-left: 10px
+  .btn
+    margin-top: 20px
+    margin-bottom: 50px
+  ul
+    +center-y
+    justify-content: space-between
+    a
+      font-family: 'SF Pro Display'
+      font-size: 16px
+      line-height: 1.25
+      color: $dark-sky-blue
+    li
+      position: relative
+      display: block
+      &:before
+        content: ''
+        width: 7.9px
+        height: 7.9px
+        background-color: $beige
+        position: absolute
+        right: -50px
+        top: 13px
+        transform: rotate(45deg)
+      &:last-child
+        &:before
+          display: none
+  &__img
+    img
+      width: 490px
+  &__video
+    +center-column
+    position: relative
+    top: -80px
+    right: -70px
+    img
+      border-radius: 5px
+    span
+      font-family: 'SF Pro Display'
+      font-size: 16px
+      line-height: 1.25
+      color: $dark-sky-blue
+.water
+  padding-top: 160px
+  &:before
+    content: ''
+    height: 100px
+    width: 100%
+    background: url('../img/wave-top.svg') no-repeat
+    position: absolute
+    top: 0
+    background-position: 74% 100%
+    background-size: cover
+    transform: rotate(180deg)

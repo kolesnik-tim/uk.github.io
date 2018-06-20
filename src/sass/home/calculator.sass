@@ -1,0 +1,105 @@
+.calculator
+  padding: 70px 0
+  .form
+    padding: 50px 0
+    &__range
+      p 
+        font-size: 24px
+        font-weight: 300
+        line-height: 1.35
+        text-align: center
+        color: $mud
+      span
+        font-family: 'SF Pro Display'
+        font-size: 12px
+        text-align: center
+        color: $sand
+        display: block
+        margin-top: 5px
+      .rangeslider
+        background: $very-light-pink
+        border-radius: 0
+        box-shadow: none
+      .rangeslider--horizontal
+        height: 2px
+      .rangeslider__fill
+        background: $sandy
+        border-radius: 0
+      .rangeslider__handle
+        background: $mud-brown
+        width: 0
+        height: 0
+        border: none
+        top: 0
+        margin-left: -10px
+        &:after
+          position: absolute
+          width: 0
+          height: 0
+          border-left: 10px solid transparent
+          border-right: 10px solid transparent
+          border-bottom: 16px solid $mud-brown
+          border-radius: 0
+    &__select
+      margin: 0 auto 10px
+      width: 260px
+      position: relative
+      span
+        font-family: 'SF Pro Display'
+        font-size: 12px
+        text-align: center
+        color: $sand
+        display: block
+        position: absolute
+        bottom: -20px
+        left: 50%
+        transform: translate(-50%)
+      select
+        width: 100%
+        height: 34px
+        position: reative
+        border: none
+        cursor: pointer
+        opacity: 0
+      p
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        font-size: 14px
+        line-height: 34px
+        overflow: hidden
+        font-size: 24px
+        font-weight: 300
+        line-height: 1.25
+        text-align: center
+        color: $mud
+        border-bottom: 2px solid $sandy
+        &:before
+          content: ''
+          position: absolute
+          right: 0
+          top: 8px
+          width: 0
+          height: 0
+          border-left: 7px solid transparent
+          border-right: 7px solid transparent
+          border-top: 11px solid $mud-brown
+    &__sum
+      +center-column
+      margin-top: -7px
+      span
+        font-family: 'Anglecia Pro Title'
+        font-size: 30px
+        font-weight: bold
+        line-height: 1.33
+        text-align: center
+        color: $mud-brown
+      p
+        font-family: 'SF Pro Display'
+        font-size: 12px
+        text-align: center
+        color: $sand
+  .btn
+    +center-relative-x

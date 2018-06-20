@@ -68,6 +68,7 @@
   },
   "dependencies": {
     "jquery-modal": "^0.9.1",
+    "rangeslider.js": "^2.3.2",
     "swiper": "^4.3.3"
   }
 }

@@ -1,0 +1,53 @@
+.gallery
+  position: relative
+  height: 760px
+  &:before
+    content: ''
+    height: 110px
+    width: 100%
+    background: url('../img/wave.svg') no-repeat
+    position: absolute
+    top: -20px
+    background-position: 74% 100%
+    background-size: cover
+    transform: rotate(180deg)
+    z-index: 10
+  &:after
+    content: ''
+    height: 110px
+    width: 100%
+    background: url('../img/wave.svg') no-repeat
+    position: absolute
+    bottom: 0
+    background-position: 45% 100%
+    background-size: cover
+    z-index: 10
+  img
+    width: 100%
+    +r(1170)
+      height: 100%
+      width: auto
+  p
+    position: absolute
+    bottom: 120px
+    left: 50%
+    transform: translate(-50%)
+    font-family: 'Anglecia Pro Title'
+    font-size: 18px
+    font-weight: 500
+    color: $white
+    text-shadow: 0 2px 10px #000000
+  .swiper-pagination
+    +center
+    bottom: 100px
+    &-bullet
+      width: 10px
+      height: 10px
+      background: $white
+      opacity: 1
+      border: none
+      &-active
+        background: none
+        width: 12px
+        height: 12px
+        border: 2px solid $white

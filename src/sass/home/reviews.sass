@@ -1,0 +1,45 @@
+.reviews
+  padding: 100px 0
+  .swiper
+    position: relative
+    margin-top: 70px
+    &-slide
+      +center
+      .slide__img
+        width: 240px
+        height: 240px
+        border-radius: 50%
+        overflow: hidden
+        margin-right: 40px
+        border: 2px solid $very-light-pink
+        img
+          width: 100%
+      .slide__text
+        flex: 1
+        h4
+          font-family: 'Anglecia Pro Title'
+          font-size: 24px
+          font-weight: 500
+          line-height: 1.25
+          color: $mud-brown
+        span
+          font-family: 'SF Pro Display'
+          font-size: 16px
+          line-height: 1.25
+          color: $dark-khaki
+          margin: 10px 0
+          display: block
+        p
+          font-family: 'Anglecia Pro Text'
+          font-size: 20px
+          font-weight: 300
+          line-height: 1.5
+          color: $mud
+          max-width: 630px
+    .swiper-button-next, .swiper-button-prev
+      i
+        color: $sandy
+    .swiper-button-prev
+      left: 15px
+    .swiper-button-next
+      right: 30px

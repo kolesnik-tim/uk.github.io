@@ -1,0 +1,58 @@
+.special-offers
+  padding: 70px 0
+  .swiper
+    position: relative
+    margin-top: 70px
+    .swiper-special-offers-next, .swiper-special-offers-prev
+      i
+        color: $sandy
+  &__block
+    position: relative
+    transition: all 0.3s
+    box-shadow: 0 10px 20px 0 rgba(66, 42, 25, 0.15)
+    border: 4px solid $white
+    height: 270px
+    overflow: hidden
+    margin-bottom: 30px
+    &:hover
+      border: 4px solid $sandy
+      a.img
+        visibility: hidden
+        opacity: 0
+      a.btn
+        opacity: 1
+    img
+      width: 100%
+    a.img
+      position: absolute
+      left: 0
+      top: 0
+      +center-column
+      width: 100%
+      height: 100%
+      background-color: rgba(244, 224, 122, 0.9)
+      transition: all 0.3s
+      img
+        width: auto
+      h4
+        font-family: 'Anglecia Pro Title'
+        font-size: 24px
+        font-weight: 500
+        line-height: 1.25
+        text-align: center
+        color: $mud-brown
+        margin-bottom: 20px
+      p
+        font-family: 'SF Pro Display'
+        font-size: 16px
+        line-height: 1.25
+        text-align: center
+        color: $mud-brown
+        margin-top: 20px
+        max-width: 320px
+    a.btn
+      opacity: 0
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)

@@ -1,0 +1,29 @@
+section.calculator
+  .container
+    .row.middle-xs.center-xs
+      .col-xs-12
+        .heading
+          h2 Посчитайте стоимость путевки в санаторий
+          p Единственные в России по своему минеральному составу источники лечебной минеральной воды. По своему составу похоже на Карловы Вары в Чехии. 
+      .col-xs-12
+        form.form(action="")
+          .row
+            .col-xs-4
+              .form__range
+                p 7 дней
+                input(type="range" min="1" max="20")
+                span Количество дней
+            .col-xs-4
+              .form__select
+                i
+                p
+                select(name="day")
+                  option(value="1") Без лечения
+                  option(value="2") С лечением
+                span Тип лечения
+            .col-xs-4
+              .form__sum
+                span от 19 500 ₽
+                p Стоимосить путевки за человека
+      .col-xs-12.center-xs
+        a(href="#").btn.btn-sandy Посчитать поточнее

@@ -25,6 +25,7 @@ a
   text-decoration: none
   transition: all 0.3s
 .heading
+  +center-column
   h2
     font-family: 'Anglecia Pro Title'
     font-size: 60px
@@ -38,6 +39,14 @@ a
     line-height: 1.25
     text-align: center
     color: $mud
+    max-width: 750px
+    a
+      color: $dark-sky-blue
+  &-secondary
+    h2
+      color: $white
+    p
+      color: $white
 .bg-line
   width: 100%
   background: url('../img/separation-line-mini.svg')
@@ -45,3 +54,19 @@ a
   height: 7px
   margin-top: 85px
   margin-bottom: 65px
+  &--clay
+    margin: 0
+    background: $very-light-pink url('../img/separation-line-mini.svg')
+  &-ulyanovsk
+    background: url('../img/separation-line-mini-blue.svg')
+    margin: 0
+    background-position: 50% 0
+  &-ulyanovsk-2
+    background: url('../img/separation-line-mini-blue.svg')
+    margin: 0
+    background-position: 50% 0
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 100%
+    transform: translate(-50%, -50%) rotate(90deg)
