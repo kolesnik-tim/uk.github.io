@@ -1,12 +1,13 @@
 section.medical-profile
   .container-fluid
     .tabs.medical-profile__menu
-      ul.tabs__caption.medical-profile__menu__caption
-        li.active Профили
-        li Программы лечения
-        li Особенности
-        li Медперсонал
-        li Консультация
+      .tabs__nav
+        ul.tabs__caption.medical-profile__menu__caption
+          li.active Профили
+          li Программы лечения
+          li Особенности
+          li Медперсонал
+          li Консультация
       .tabs__content.medical-profile__menu__content.active
         .tabs
           ul.tabs__caption
@@ -42,10 +43,11 @@ section.medical-profile
                   a(href="#") Сноуборд
             .medical-profile__content__social
               span Поделитесь этим с друзьями:
-              a(href="#")
-                i.icon.icon-vk
-              a(href="#")
-                i.icon.icon-fb
-              a(href="#")
-                i.icon.icon-ok
+              .medical-profile__content__social__block
+                a(href="#")
+                  i.icon.icon-vk
+                a(href="#")
+                  i.icon.icon-fb
+                a(href="#")
+                  i.icon.icon-ok
       .tabs__content

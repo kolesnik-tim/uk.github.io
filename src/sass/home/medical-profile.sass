@@ -3,11 +3,28 @@
   .container-fluid
     max-width: 1050px
   &__menu
-    overflow-x: hidden
+    position: relative
+    &:before
+      position: absolute
+      right: -30px
+      content: '\EA08'
+      top: 4px
+      font-family: 'iconfont'
+      font-size: 18px
+      color: $mud
+      display: none
+      +r(767)
+        display: block
+    .tabs__nav
+      overflow-y: hidden
     &__caption
       +center
       border-bottom: 1px solid $beige
       margin-bottom: 10px
+      overflow: hidden
+      +r(767)
+        flex-wrap: nowrap
+        width: 900px
       li
         font-size: 20px
         font-weight: 300
@@ -18,6 +35,8 @@
         border-bottom: 4px solid $white
         transition: all 0.3s
         cursor: pointer
+        +r(870)
+          font-size: 18px
         &:last-child
           margin-right: 0
         &.active
@@ -31,9 +50,16 @@
       .tabs
         margin-top: 80px
         display: flex
+        +r(767)
+          display: block
         &__caption
           width: 210px
           margin-right: 30px
+          +r(767)
+            +center-column
+            text-align: center
+            width: 100%
+            margin-bottom: 50px
           li
             font-size: 16px
             font-weight: 300
@@ -57,6 +83,8 @@
               margin-bottom: 50px
               margin-top: 10px
               font-size: 24px
+              +r(767)
+                font-size: 18px
           .medical-profile__content__img
             width: 100%
             box-shadow: 0 10px 20px 0 rgba(66, 42, 25, 0.15)
@@ -64,14 +92,20 @@
             overflow: hidden
             height: 350px
             margin-bottom: 50px
+            +r(767)
+              height: 320px
             img
-              width: 100%
+              height: 110%
+              +r(767)
+                +center-relative-x
           p, li
             font-size: 20px
             font-weight: 300
             line-height: 1.5
             color: $mud
             margin-bottom: 20px
+            +r(767)
+              font-size: 16px
           h3
             font-family: 'Anglecia Pro Title'
             font-size: 30px
@@ -79,6 +113,8 @@
             line-height: 1.33
             color: $mud-brown
             margin: 50px 0 30px
+            +r(767)
+                font-size: 24px
           li
             position: relative
             &:before
@@ -95,10 +131,16 @@
             ul
               justify-content: flex-start
             li
+              margin-bottom: 0
               &:before
                 display: none
           .medical-profile__content__social
             +center-y
+            +r(767)
+              flex-direction: column
+            &__block
+              +r(767)
+                padding-top: 20px
             span
               font-family: 'SF Pro Display'
               font-size: 16px
