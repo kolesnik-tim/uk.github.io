@@ -6,6 +6,8 @@
     +center
     margin-top: 55px
     position: relative
+    +r(767)
+      flex-direction: column
     &__phone
       margin-bottom: -17px
     input[type='tel']
@@ -20,6 +22,11 @@
       border-bottom: 2px solid $sandy
       padding-bottom: 5px
       font-family: 'Anglecia Pro Text'
+      +r(767)
+        margin-right: 0
+        margin-bottom: 30px
+        font-size: 18px
+        width: 300px
     span
       text-align: center
       display: block

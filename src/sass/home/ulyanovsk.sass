@@ -4,6 +4,8 @@
   padding: 100px 0
   .logo
     margin-bottom: 100px
+    +r(450)
+      width: 100%
   &__content
     background: $white
     padding-top: 35px
@@ -13,6 +15,20 @@
   &__block
     +center-column
     padding: 37px 0
+    +r(767)
+      &:after
+        content: ''
+        width: 100%
+        height: 7px
+        background: url('../img/separation-line-mini-blue.svg')
+        background-size: content
+        background-position: 50% 0
+        position: relative
+        bottom: -40px
+    &-last
+      +r(767)
+        &:after
+          display: none
     img
       padding-bottom: 10px
     h3
@@ -22,6 +38,8 @@
       line-height: 1.25
       color: $slate
       margin-bottom: 10px
+      +r(767)
+        font-size: 18px
     p
       max-width: 380px
       font-family: 'SF Pro Display'
@@ -29,3 +47,6 @@
       line-height: 1.25
       text-align: center
       color: $bluegrey
+      +r(767)
+        font-size: 14px
+        padding: 0 20px

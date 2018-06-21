@@ -18,40 +18,53 @@
       line-height: 1.25
       color: $dark-khaki
       margin-left: 10px
+      +r(767)
+        font-size: 14px
   .btn
     margin-top: 20px
     margin-bottom: 50px
   ul
     +center-y
     justify-content: space-between
+    +r(767)
+      flex-direction: column
     a
       font-family: 'SF Pro Display'
       font-size: 16px
       line-height: 1.25
       color: $dark-sky-blue
+      +r(767)
+        font-size: 14px
     li
       position: relative
       display: block
-      &:before
+      margin-right: 10px
+      &:after
         content: ''
         width: 7.9px
         height: 7.9px
         background-color: $beige
-        position: absolute
-        right: -50px
-        top: 13px
+        position: relative
+        display: inline-block
         transform: rotate(45deg)
+        margin-left: 40px
+        +r(1024)
+          display: none
       &:last-child
-        &:before
+        &:after
           display: none
   &__img
     img
       width: 490px
+    +r(767)
+      display: none
   &__video
     +center-column
     position: relative
     top: -80px
     right: -70px
+    +r(767)
+      display: none
     img
       border-radius: 5px
     span
@@ -61,6 +74,8 @@
       color: $dark-sky-blue
 .water
   padding-top: 160px
+  +r(767)
+    padding-bottom: 40px
   &:before
     content: ''
     height: 100px

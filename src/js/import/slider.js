@@ -13,6 +13,20 @@ var swiper = new Swiper('.swiper-intro', {
   },
 });
 
+//working-profiles
+
+var swiper = new Swiper('.swiper-working-profiles', {
+  slidesPerView: 2,
+  loop: true,
+  centeredSlides: true,
+  breakpoints: {
+    550: {
+      slidesPerView: 1,
+    },
+  }
+});
+
+
 //special-offers
 
 var swiper = new Swiper('.swiper-special-offers', {
@@ -22,6 +36,11 @@ var swiper = new Swiper('.swiper-special-offers', {
     nextEl: '.swiper-special-offers-next',
     prevEl: '.swiper-special-offers-prev',
   },
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+    },
+  }
 });
 
 
@@ -48,4 +67,22 @@ var swiper = new Swiper('.swiper-reviews', {
     nextEl: '.swiper-reviews-next',
     prevEl: '.swiper-reviews-prev',
   },
+});
+
+//search
+
+var swiper = new Swiper('.swiper-search', {
+  slidesPerView: 3,
+  navigation: {
+    nextEl: '.swiper-search-next',
+    prevEl: '.swiper-search-prev',
+  },
+  breakpoints: {
+    550: {
+      slidesPerView: 1,
+    },
+    767: {
+      slidesPerView: 2,
+    },
+  }
 });

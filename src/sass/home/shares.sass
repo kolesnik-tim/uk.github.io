@@ -16,7 +16,7 @@
       height: 100%
       position: absolute
       left: 0
-      top: 0
+      top: 5px
       overflow: hidden
       font-size: 24px
       font-weight: 300
@@ -24,6 +24,8 @@
       text-align: center
       color: $mud
       border-bottom: 2px solid $sandy
+      +r(767)
+        font-size: 18px
       &:before
         content: ''
         position: absolute
@@ -34,32 +36,6 @@
         border-left: 5px solid transparent
         border-right: 5px solid transparent
         border-top: 9px solid $mud-brown
-  &__tags
-    ul
-      +center
-      flex-wrap: wrap
-      max-width: 900px
-      margin: 0 auto
-      a
-        border-radius: 6px
-        background-color: #f6efe5
-        padding: 10px 15px
-        font-family: 'SF Pro Display'
-        font-size: 16px
-        line-height: 1.25
-        color: $mud
-        margin-right: 10px
-        display: block
-        margin-bottom: 10px
-    .all-tags
-      font-family: 'SF Pro Display'
-      font-size: 16px
-      line-height: 1.25
-      color: $dark-sky-blue
-      display: block
-      +center
-      margin-top: 10px
-      margin-bottom: 70px
   &__block
     position: relative
     transition: all 0.3s
@@ -77,6 +53,9 @@
         opacity: 1
     img
       width: 100%
+      +r(460)
+        width: auto
+        height: 100%
     a.img
       position: absolute
       left: 0
@@ -88,6 +67,8 @@
       transition: all 0.3s
       img
         width: auto
+        +r(460)
+          height: auto
       h4
         font-family: 'Anglecia Pro Title'
         font-size: 24px
@@ -96,6 +77,8 @@
         text-align: center
         color: $mud-brown
         margin-bottom: 20px
+        +r(767)
+          font-size: 18px
       p
         font-family: 'SF Pro Display'
         font-size: 16px
@@ -104,6 +87,8 @@
         color: $mud-brown
         margin-top: 20px
         max-width: 240px
+        +r(767)
+          font-size: 14px
     a.btn
       opacity: 0
       position: absolute

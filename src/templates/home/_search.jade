@@ -1,0 +1,65 @@
+sectin.search
+  .container
+    .row
+      .col-xs-12
+        .heading
+          h2 Что ищем?
+          p Возможно мы сможем найти то, что вас интересует.
+      .col-xs-12
+        form(action="").form
+          .form__input
+            input(type="text")
+            span Что ищем?
+          input(type="submit" value="Найти").btn.btn-sandy
+section.search
+  .container
+    .row
+      .col-xs-12
+        .heading
+          h2 Поиск по сайту
+      .col-xs-12
+        form(action="").form
+          .form__input
+            input(type="text")
+          input(type="submit" value="Найти").btn.btn-sandy
+      .col-xs-12
+        h4 По вашему запросу показано 1-20 и 231 совпадений:
+        ol
+          li
+            a(href="#") Санаторно-курортное лечение в Ундорах
+          li
+            a(href="#") Преимущества лечения
+          li
+            a(href="#") Заболевания эндокринной системы
+          li
+            a(href="#") Санаторное лечение бронхиальной астмы
+          li
+            a(href="#") Лечение женского и мужского бесплодия
+  .swiper
+    .container
+      .swiper-container.swiper-search
+        .swiper-wrapper
+          .swiper-slide
+            .swiper-slide__img
+              img(src="img/horses/horses-1.png" srcset="img/horses/horses-1@2x.png 2x, img/horses/horses-1@3x.png 3x")
+            h4 Клин
+            p Орловский рысак
+          .swiper-slide
+            .swiper-slide__img
+              img(src="img/horses/horses-2.png" srcset="img/horses/horses-2@2x.png 2x, img/horses/horses-2@3x.png 3x")
+            h4 Ланкастер
+            p Русский рысак
+          .swiper-slide
+            .swiper-slide__img
+              img(src="img/horses/horses-3.png" srcset="img/horses/horses-3@2x.png 2x, img/horses/horses-3@3x.png 3x")
+            h4 Бокс
+            p Терская порода
+          .swiper-slide
+            .swiper-slide__img
+              img(src="img/horses/horses-1.png" srcset="img/horses/horses-1@2x.png 2x, img/horses/horses-1@3x.png 3x")
+            h4 Клин
+            p Орловский рысак
+      .swiper-button-next.swiper-search-next
+        i.icon.icon-right-arrow
+      .swiper-button-prev.swiper-search-prev
+        i.icon.icon-left-arrow

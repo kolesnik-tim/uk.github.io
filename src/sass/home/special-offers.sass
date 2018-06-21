@@ -23,6 +23,15 @@
         opacity: 1
     img
       width: 100%
+      +r(1024)
+        width: auto
+        height: 100%
+      +r(767)
+        width: 100%
+        height: auto
+      +r(500)
+        width: auto
+        height: 100%
     a.img
       position: absolute
       left: 0
@@ -34,6 +43,8 @@
       transition: all 0.3s
       img
         width: auto
+        +r(1024)
+          height: auto
       h4
         font-family: 'Anglecia Pro Title'
         font-size: 24px
@@ -42,6 +53,8 @@
         text-align: center
         color: $mud-brown
         margin-bottom: 20px
+        +r(767)
+          font-size: 18px
       p
         font-family: 'SF Pro Display'
         font-size: 16px
@@ -50,6 +63,8 @@
         color: $mud-brown
         margin-top: 20px
         max-width: 320px
+        +r(767)
+          font-size: 14px
     a.btn
       opacity: 0
       position: absolute

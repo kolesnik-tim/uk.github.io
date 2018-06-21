@@ -33,6 +33,8 @@ a
     text-align: center
     color: $mud-brown
     margin-bottom: 10px
+    +r(767)
+      font-size: 24px
   p
     font-family: 'Anglecia Pro Text'
     font-size: 24px
@@ -41,6 +43,8 @@ a
     text-align: center
     color: $mud
     max-width: 750px
+    +r(767)
+      font-size: 18px
     a
       color: $dark-sky-blue
   &-secondary
@@ -62,6 +66,8 @@ a
     background: url('../img/separation-line-mini-blue.svg')
     margin: 0
     background-position: 50% 0
+    +r(767)
+      display: none
   &-ulyanovsk-2
     background: url('../img/separation-line-mini-blue.svg')
     margin: 0
@@ -69,5 +75,36 @@ a
     position: absolute
     left: 50%
     top: 50%
-    width: 100%
+    width: 140%
     transform: translate(-50%, -50%) rotate(90deg)
+    +r(767)
+      display: none
+.tags
+  ul
+    +center
+    flex-wrap: wrap
+    max-width: 900px
+    margin: 0 auto
+    a
+      border-radius: 6px
+      background-color: #f6efe5
+      padding: 10px 15px
+      font-family: 'SF Pro Display'
+      font-size: 16px
+      line-height: 1.25
+      color: $mud
+      margin-right: 10px
+      display: block
+      margin-bottom: 10px
+      +r(767)
+        font-size: 14px
+  .all-tags
+    font-family: 'SF Pro Display'
+    font-size: 16px
+    line-height: 1.25
+    color: $dark-sky-blue
+    display: block
+    +center
+    margin-top: 10px
+    margin-bottom: 70px
+    text-align: center

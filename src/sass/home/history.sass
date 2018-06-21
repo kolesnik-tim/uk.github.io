@@ -1,0 +1,93 @@
+.history
+  padding: 100px 0
+  +r(767)
+    padding: 30px 0
+  &__content
+    position: relative
+    padding: 0px 0 100px
+  &__decor
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%)
+    width: 30px
+    height: 100%
+    border-left: 4px dotted $beige
+    +r(767)
+      display: none
+    i
+      width: 35px
+      height: 40px
+      position: absolute
+      left: -19px
+      background: $white
+      &:after
+        content: ''
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: 30px
+        height: 30px
+        background: $beige
+        border-radius: 100%
+    &-1
+      top: 0
+    &-2
+      top: 210px
+      &:before
+        content: ''
+        position: absolute
+        width: 120px
+        border-bottom: 4px dotted $beige
+        right: -130px
+        top: 19px
+    &-3
+      top: 420px
+    &-4
+      bottom: 230px
+      &:before
+        content: ''
+        position: absolute
+        width: 100px
+        border-bottom: 4px dotted $beige
+        left: -110px
+        top: 19px
+    &-5
+      bottom: 0
+  h4
+    font-family: 'Anglecia Pro Title'
+    font-size: 30px
+    font-weight: 500
+    line-height: 1.33
+    color: $mud-brown
+    margin-bottom: 15px
+    margin-top: 250px
+    &.history__text-primary
+      margin-top: 150px
+    +r(767)
+      margin: 20px 0 !important
+      text-align: center
+  p
+    font-size: 20px
+    font-weight: 300
+    line-height: 1.5
+    color: $mud
+    +r(767)
+      font-size: 16px
+      text-align: center
+  &__img
+    width: 265px
+    height: 265px
+    overflow: hidden
+    border-radius: 50%
+    +center-relative-x
+    border: 2px solid beige
+    margin-top: 175px
+    +r(767)
+      margin-bottom: 88px
+      margin-top: 35px
+    &-primary
+      margin-top: 75px
+    img
+      width: 100%

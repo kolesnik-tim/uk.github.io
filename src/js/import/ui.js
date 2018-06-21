@@ -45,5 +45,8 @@ $('.phone').mask('+7 (9 9 9) 9 9 9 - 9 9 - 9 9');
 $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
   $(this)
     .addClass('active').siblings().removeClass('active')
-    .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    .closest('div.tabs').children('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  if($(this).closest('.tabs__nav')) {
+    $(this).closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  }
 });

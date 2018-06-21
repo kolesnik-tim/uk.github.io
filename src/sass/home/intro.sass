@@ -2,10 +2,15 @@
   background: url('../img/bg-intro.png')
   background-repeat: no-repeat
   background-size: cover
+  background-position: 50% 50%
   padding-top: 70px
   padding-bottom: 150px
   position: relative
   height: 110vh
+  +r(1024)
+    height: 800px
+  +r(767)
+    height: 650px    
   &:before
     content: ''
     height: 110px
@@ -19,14 +24,18 @@
     margin-top: 20px
     margin-bottom: 40px
     margin-left: 90px
+    +r(767)
+      margin-left: 0
   &__swiper
     position: relative
     .swiper
       &-container
-        width: 540px
+        max-width: 540px
         margin: 0
         margin-left: 110px
         padding-top: 40px
+        +r(767)
+          margin-left: 0
       &-slide
         h2
           font-family: 'Anglecia Pro Title'
@@ -34,6 +43,9 @@
           font-weight: 500
           color: $white
           margin-bottom: 10px
+          +r(767)
+            font-size: 24px
+            margin-bottom: 20px
         p
           font-family: 'Anglecia Pro Text'
           font-size: 24px
@@ -41,6 +53,8 @@
           line-height: 1.25
           color: $white
           margin-bottom: 45px
+          +r(767)
+            font-size: 18px
       &-pagination
         +center-y
         top: 0
@@ -59,6 +73,8 @@
   &__down
     margin-top: 40px
     +center
+    +r(767)
+      display: none
     span
       font-family: 'SF Pro Display'
       font-size: 12px

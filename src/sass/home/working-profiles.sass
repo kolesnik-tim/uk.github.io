@@ -1,0 +1,53 @@
+.working-profiles
+  padding: 70px 0
+  overflow: hidden
+  &__desctop
+    +r(767)
+      display: none
+  .swiper
+    position: relative
+    display: none
+    +r(767)
+      display: block
+    &:before
+      content: ''
+      position: absolute
+      left: -15px
+      top: 0
+      height: 100%
+      width: 90px
+      background-image: linear-gradient(to left, rgba(255, 255, 255, 0), $white)
+      z-index: 10
+    &:after
+      content: ''
+      position: absolute
+      right: -15px
+      top: 0
+      height: 100%
+      width: 90px
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), $white)
+      z-index: 10
+    &-container
+      overflow: visible
+      padding: 0 40px
+      +r(550)
+        padding: 0 120px
+      +r(450)
+        padding: 0 90px
+      +r(380)
+        padding: 0 60px
+    &-slide
+      +center
+  &__block
+    margin-top: 70px
+    +r(767)
+      width: 180px
+      +center-column
+    img
+      height: 100px
+    p
+      font-family: 'SF Pro Display'
+      font-size: 16px
+      line-height: 1.25
+      text-align: center
+      color: $dark-khaki

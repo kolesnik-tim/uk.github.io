@@ -3,12 +3,13 @@
   &__conditions
     margin-bottom: 100px
     &__block
+      margin-bottom: 40px
+      +center-column
       &__img
         width: 64px
-        +center-relative-x
         min-height: 72px
         margin-bottom: 20px
-        +center-y
+        +center
         img
           width: 100%
           &.frige
@@ -20,6 +21,8 @@
         line-height: 1.5
         text-align: center
         color: $mud
+        +r(767)
+          font-size: 
   &__block
     height: 450px
     background: url('../img/jessica-ruscello-120993.png')
@@ -31,5 +34,7 @@
       background: rgba(66, 42, 25, 0.15)
       height: 100%
       +center-column
+      +r(767)
+        padding: 0 10px
       .btn
         margin-top: 55px

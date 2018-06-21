@@ -1,0 +1,116 @@
+.medical-profile
+  padding: 100px 0
+  .container-fluid
+    max-width: 1050px
+  &__menu
+    overflow-x: hidden
+    &__caption
+      +center
+      border-bottom: 1px solid $beige
+      margin-bottom: 10px
+      li
+        font-size: 20px
+        font-weight: 300
+        line-height: 1.5
+        color: $mud
+        padding-bottom: 13px
+        margin-right: 30px
+        border-bottom: 4px solid $white
+        transition: all 0.3s
+        cursor: pointer
+        &:last-child
+          margin-right: 0
+        &.active
+          border-bottom: 4px solid $very-light-brown
+        &:hover
+          border-bottom: 4px solid $sandy
+    &__content
+      display: none
+      &.active
+        display: block
+      .tabs
+        margin-top: 80px
+        display: flex
+        &__caption
+          width: 210px
+          margin-right: 30px
+          li
+            font-size: 16px
+            font-weight: 300
+            line-height: 1.88
+            color: $mud
+            margin-bottom: 10px
+            border-bottom: 4px solid $white
+            &.active
+              border-bottom: 4px solid $very-light-brown
+            &:hover
+              border-bottom: 4px solid $sandy
+        &__content
+          display: none
+          flex: 1
+          &.active
+            display: block
+          .heading
+            align-items: flex-start
+            p
+              text-align: left
+              margin-bottom: 50px
+              margin-top: 10px
+              font-size: 24px
+          .medical-profile__content__img
+            width: 100%
+            box-shadow: 0 10px 20px 0 rgba(66, 42, 25, 0.15)
+            border: 4px solid #f6efe5
+            overflow: hidden
+            height: 350px
+            margin-bottom: 50px
+            img
+              width: 100%
+          p, li
+            font-size: 20px
+            font-weight: 300
+            line-height: 1.5
+            color: $mud
+            margin-bottom: 20px
+          h3
+            font-family: 'Anglecia Pro Title'
+            font-size: 30px
+            font-weight: 500
+            line-height: 1.33
+            color: $mud-brown
+            margin: 50px 0 30px
+          li
+            position: relative
+            &:before
+              content: ''
+              position: absolute
+              left: -40px
+              top: 8px
+              width: 10px
+              height: 10px
+              background: $sand
+              border-radius: 50%
+          .tags
+            margin: 45px 0
+            ul
+              justify-content: flex-start
+            li
+              &:before
+                display: none
+          .medical-profile__content__social
+            +center-y
+            span
+              font-family: 'SF Pro Display'
+              font-size: 16px
+              line-height: 1.25
+              color: $dark-khaki
+              display: block
+              margin-right: 20px
+            a
+              margin-right: 20px
+              i
+                color: $dark-sky-blue
+                font-size: 20px
+
+                    
+

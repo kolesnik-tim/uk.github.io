@@ -1,0 +1,104 @@
+.search
+  padding: 100px 0
+  .form
+    margin-top: 50px
+    margin-bottom: 100px
+    +center
+    +r(767)
+      flex-direction: column
+    &__input
+      width: 460px
+      margin-right: 35px
+      margin-bottom: -15px
+      +r(767)
+        margin-right: 0
+        margin-bottom: 30px
+      +r(500)
+        width: 300px
+      input
+        font-size: 24px
+        font-weight: 300
+        line-height: 1.25
+        text-align: center
+        color: $mud-brown
+        width: 100%
+        background: none
+        border-bottom: 2px solid $sandy
+        font-family: 'Anglecia Pro Text'
+        +r(767)
+          font-size: 18px
+        &::placeholder
+          color: $mud-brown
+      span
+        text-align: center
+        display: block
+        font-family: 'SF Pro Display'
+        font-size: 12px
+        margin-top: 5px
+        color: $sand
+  h4
+    font-family: 'Anglecia Pro Title'
+    font-size: 24px
+    font-weight: 500
+    line-height: 1.25
+    color: $mud-brown
+    +r(767)
+      font-size: 18px
+  ol
+    list-style: decimal
+    font-family: 'Anglecia Pro Text'
+    font-size: 20px
+    font-weight: 300
+    line-height: 1.5
+    color: $sand
+    padding-left: 45px
+    margin-top: 50px
+    +r(767)
+      font-size: 16px
+    li
+      padding-left: 30px
+      margin-bottom: 15px
+    a
+      font-family: 'Anglecia Pro Text'
+      font-size: 20px
+      font-weight: 300
+      line-height: 1.5
+      color: $mud
+      +r(767)
+        font-size: 16px
+  .swiper
+    position: relative
+    padding: 100px 0
+    &-slide
+      &__img
+        width: 240px
+        height: 240px
+        border-radius: 50%
+        overflow: hidden
+        margin-right: 40px
+        border: 2px solid $very-light-pink
+        margin-bottom: 10px
+        +center-relative-x
+        img
+          width: 100%
+      h4
+        font-family: 'Anglecia Pro Title'
+        font-size: 24px
+        font-weight: 500
+        line-height: 1.25
+        text-align: center
+        color: $mud-brown
+        margin: 20px 0 10px
+        +r(767)
+          font-size: 18px
+      p
+        font-family: 'SF Pro Display'
+        font-size: 16px
+        line-height: 1.25
+        text-align: center
+        color: $dark-khaki
+        +r(767)
+          font-size: 14px
+    .swiper-button-next, .swiper-button-prev
+      i
+        color: $sandy

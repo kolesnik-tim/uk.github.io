@@ -7,9 +7,6 @@
     height: 30px
     display: inline-flex
     margin-right: 25px
-    +r(767)
-      left: 20px
-      position: absolute
     &.active
       span
         background: transparent
@@ -105,10 +102,17 @@
       font-size: 16px
       font-weight: 500
       color: $mud-brown
+      +r(767)
+        display: none
     i
       color: $mud-brown
       font-size: 13px
       margin-right: 20px
+      +r(767)
+        display: none
+    .phone
+      +r(767)
+        display: none
   &__top
     position: absolute
     top: 35px
@@ -129,6 +133,8 @@
       flex: 1
       margin: 0 40px
       margin-right: 60px
+      +r(1024)
+        display: none
       ul
         +center-y
         justify-content: space-between

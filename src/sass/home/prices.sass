@@ -1,0 +1,80 @@
+.prices
+  padding: 140px 0
+  &__content
+    width: 810px
+    margin: 0 auto
+    .tabs
+      margin-top: 50px
+      &__caption
+        +center
+        justify-content: space-between
+        li
+          padding: 10px 15px
+          border-radius: 6px
+          background-color: #f6efe5
+          cursor: pointer
+          font-family: 'SF Pro Display'
+          font-size: 16px
+          line-height: 1.25
+          color: $mud 
+          transition: all 0.3s
+          &.active
+            background: $sandy
+            color: $mud-brown
+      &__content
+        padding: 50px 0px
+        display: none
+        position: relative
+        &.active
+          display: block
+        h3, h4
+          font-family: 'Anglecia Pro Title'
+          font-size: 30px
+          font-weight: 500
+          line-height: 1.33
+          color: $mud-brown
+          margin-left: 20px
+        h3
+          padding-left: 30px
+        h4
+          font-size: 24px
+          padding-bottom: 10px
+        &__title
+          border-bottom: 1px solid $beige
+          position: sticky
+          top: 0
+          margin-top: 30px
+          margin-bottom: 10px
+          padding: 0 30px
+          display: flex
+          justify-content: space-between
+          p
+            font-family: 'SF Pro Display'
+            font-size: 16px
+            line-height: 1.25
+            color: $very-light-brown
+            padding-left: 20px
+            margin-bottom: 10px
+            &:last-child
+              padding-left: 0
+              padding-right: 40px
+        table
+          width: 100%
+          padding: 0 30px
+          display: block
+          tbody
+            width: 100%
+            display: block
+          tr
+            width: 100%
+            padding: 15px 50px 15px 20px
+            display: flex
+            justify-content: space-between
+            &:nth-child(2n)
+              background: rgba(246, 239, 229, 0.5)
+              border-radius: 6px
+          td
+            font-size: 20px
+            font-weight: 300
+            line-height: 1.5
+            color: $mud

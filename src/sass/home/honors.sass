@@ -1,12 +1,17 @@
 .honors
   .tabs
     margin-top: 70px
-    overflow-y: hidden
+    &__nav
+      overflow-y: hidden
+      margin-bottom: 70px
     ul
       +center
       flex-wrap: wrap
+      overflow: hidden
       width: 950px
-      margin-bottom: 70px
+      +r(767)
+        flex-wrap: nowrap
+        width: 1200px
       li
         +center
         width: 150px
@@ -26,13 +31,14 @@
     &__content
       display: none
       padding: 0 50px
+      width: 100%
       &.active
         display: block
       &__block
         width: 265px
         height: 365px
         margin-bottom: 70px
-        position: relative
+        +center-relative-x
         overflow: hidden
         &:before
           content: ''

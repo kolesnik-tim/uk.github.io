@@ -5,7 +5,11 @@
     &__content
       +center-y
       margin: 50px 0
+      +r(800)
+        flex-direction: column
     &__block
+      +r(800)
+        margin-bottom: 40px
       &-tel
         margin-bottom: -20px
       input
@@ -20,6 +24,10 @@
         border-bottom: 2px solid $sandy
         padding-bottom: 5px
         font-family: 'Anglecia Pro Text'
+        +r(767)
+          margin-right: 0
+          width: 300px
+          font-size: 18px
         &::placeholder
           color: $sand
         &.phone

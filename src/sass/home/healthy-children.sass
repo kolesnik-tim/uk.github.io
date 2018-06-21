@@ -3,6 +3,8 @@
   background: url('../img/healthy-children-bg.png')
   background-repeat: no-repeat
   background-size: cover
+  +r(767)
+    height: 500px
   &__content
     +center-column
     height: 100%
@@ -16,6 +18,8 @@
     text-align: center
     color: $white
     margin-bottom: 10px
+    +r(767)
+      font-size: 24px
   p
     font-family: 'Anglecia Pro Text'
     font-size: 24px
@@ -25,3 +29,5 @@
     color: $white
     max-width: 750px
     margin-bottom: 50px
+    +r(767)
+      font-size: 18px

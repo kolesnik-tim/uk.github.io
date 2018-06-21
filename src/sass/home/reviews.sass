@@ -3,8 +3,14 @@
   .swiper
     position: relative
     margin-top: 70px
+    +r(1024)
+      padding: 0 50px
+    +r(767)
+      padding: 0
     &-slide
       +center
+      +r(767)
+        flex-direction: column
       .slide__img
         width: 240px
         height: 240px
@@ -12,6 +18,11 @@
         overflow: hidden
         margin-right: 40px
         border: 2px solid $very-light-pink
+        +r(767)
+          width: 100px
+          height: 100px
+          margin-bottom: 20px
+          margin-right: 0
         img
           width: 100%
       .slide__text
@@ -22,6 +33,9 @@
           font-weight: 500
           line-height: 1.25
           color: $mud-brown
+          +r(767)
+            font-size: 18px
+            text-align: center
         span
           font-family: 'SF Pro Display'
           font-size: 16px
@@ -29,6 +43,10 @@
           color: $dark-khaki
           margin: 10px 0
           display: block
+          +r(767)
+            font-size: 14px
+            text-align: center
+            margin-bottom: 25px
         p
           font-family: 'Anglecia Pro Text'
           font-size: 20px
@@ -36,7 +54,14 @@
           line-height: 1.5
           color: $mud
           max-width: 630px
+          +r(767)
+            font-size: 16px
+            text-align: center
     .swiper-button-next, .swiper-button-prev
+      +r(1024)
+        display: block
+      +r(767)
+        top: 50px
       i
         color: $sandy
     .swiper-button-prev

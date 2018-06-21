@@ -1,5 +1,7 @@
 .natural-factors
   padding: 70px 0
+  +r(767)
+    padding: 30px 0
   .heading
     margin-bottom: 110px
   &__block
@@ -9,8 +11,17 @@
       height: 165px
       border-radius: 50%
       background: #f6efe5
+      +r(767)
+        width: 155px
+        height: 155px
+      img
+        width: 100%
     p
       font-size: 24px
       font-weight: 300
       color: $mud 
       margin-top: 30px
+      text-align: center
+      +r(767)
+        margin-bottom: 60px
+        font-size: 18px

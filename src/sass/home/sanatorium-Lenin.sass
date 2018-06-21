@@ -1,0 +1,88 @@
+.sanatorium-Lenin
+  background: url('../img/sanatorium-Lenin.png')
+  background-repeat: no-repeat
+  background-size: cover
+  height: 100vh
+  +r(1024)
+    height: 800px
+  &__content
+    background: rgba(0, 0, 0, 0.7)
+    width: 100%
+    height: 100%
+    +center-column
+  .form
+    +center
+    width: 100%
+    margin-top: 70px
+    +r(1024)
+      flex-direction: column
+    &__block
+      background: $white
+      +center
+      width: 670px
+      height: 50px
+      border-radius: 6px
+      +r(1024)
+        flex-direction: column
+        height: auto
+        width: 300px
+    &__select
+      margin: 0 auto
+      position: relative
+      border-right: 1px solid $very-light-brown
+      height: 100%
+      +r(1024)
+        flex: auto
+        width: 100%
+        border-bottom: 1px solid $very-light-brown
+      &-sanatorium
+        flex: 4
+      &-data
+        flex: 3
+      &-days
+        flex: 2
+      &-people
+        flex: 2
+        border-bottom: none !important
+      span
+        font-family: 'SF Pro Display'
+        font-size: 12px
+        color: $sand
+        display: block
+        padding-left: 20px
+        padding-top: 6px
+      select
+        width: 100%
+        height: 34px
+        position: reative
+        border: none
+        cursor: pointer
+        opacity: 0
+      p
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        bottom: -20px
+        overflow: hidden
+        font-size: 20px
+        font-weight: 500
+        line-height: 1.5
+        color: $mud-brown
+        padding-left: 20px
+        +r(767)
+          font-size: 18px
+          bottom: -24px
+        &:before
+          content: ''
+          position: absolute
+          right: 20px
+          top: 0px
+          width: 0
+          height: 0
+          border-left: 5px solid transparent
+          border-right: 5px solid transparent
+          border-top: 9px solid $mud-brown
+    input
+      +r(1024)
+        width: 300px
