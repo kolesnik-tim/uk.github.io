@@ -36,7 +36,7 @@
         transition: all 0.3s
         cursor: pointer
         +r(870)
-          font-size: 18px
+          font-size: 17px
         &:last-child
           margin-right: 0
         &.active
@@ -50,6 +50,7 @@
       .tabs
         margin-top: 80px
         display: flex
+        width: 100%
         +r(767)
           display: block
         &__caption
@@ -92,12 +93,17 @@
             overflow: hidden
             height: 350px
             margin-bottom: 50px
-            +r(767)
-              height: 320px
+            display: block
+            +r(1024)
+              height: 300px
             img
-              height: 110%
-              +r(767)
-                +center-relative-x
+              width: 100%
+              +center-relative-x
+              +r(900)
+                width: 140%
+              +r(550)
+                width: auto
+                height: 100%
           p, li
             font-size: 20px
             font-weight: 300
