@@ -1,15 +1,6 @@
-import 'jquery-modal';
 import range from 'rangeslider.js';
 import '../lib/maskedinput.js';
 
-//header
-$(window).scroll(function() {
-  if($(this).scrollTop() >= 100) {
-    $('.header__scroll').addClass('active');
-  } else {
-    $('.header__scroll').removeClass('active');
-  }
-});
 
 //select
 $('select').each(function() {

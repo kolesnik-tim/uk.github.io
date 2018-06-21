@@ -7,6 +7,7 @@
     height: 30px
     display: inline-flex
     margin-right: 25px
+    cursor: pointer
     &.active
       span
         background: transparent
@@ -60,6 +61,9 @@
     position: fixed
     top: 0px
     z-index: 15
+    transition: all 0.3s
+    &.active
+      top: -40px
     a
       font-family: 'SF Pro Display'
       font-size: 14px
@@ -97,6 +101,13 @@
         margin-bottom: -10px
     &__block
       +center-y
+      a
+        font-family: 'Anglecia Pro Title'
+        font-size: 16px
+        font-weight: 500
+        color: $mud-brown
+        margin-right: 11px
+        display: none
     p
       font-family: 'Anglecia Pro Title'
       font-size: 16px
@@ -150,3 +161,16 @@
     a.phone
       width: 180px
       text-align: right
+  &.active
+    .header__toolbar
+      top: -40px
+    .header__scroll
+      top: 0
+      background: none
+      .header__scroll__block
+        p
+          display: none
+        a
+          display: block
+
+    

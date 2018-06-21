@@ -21,7 +21,7 @@
           <div class="row middle-xs">
             <div class="col-md-4 col-xs-5">
               <div class="header__scroll__block">
-                <div class="menu-open"><span></span></div><i class="icon icon-ring"></i>
+                <div class="menu-open"><span></span></div><a href="#">Забронировать</a><i class="icon icon-ring"></i>
                 <p>Санаторий имени В. И. Ленина</p>
               </div>
             </div>
@@ -33,7 +33,7 @@
           <div class="menu-open"><span></span></div>
           <nav>
             <ul>
-              <li><a href="#">Лечение</a></li>
+              <li><a href="#step" data-pop>Лечение</a></li>
               <li><a href="#">Санатории</a></li>
               <li><a href="#">Уникальность</a></li>
               <li><a href="#">Досуг</a></li>
@@ -1358,6 +1358,110 @@
         </div>
       </div>
     </section>
+    <div class="menu">
+      <div class="menu__content">
+        <div class="menu-close"><span></span></div>
+        <div class="menu__block menu__block__tel"><a href="tel:88007074105">8 (800) 707-41-05</a></div>
+        <div class="menu__block">
+          <h4> <a href="#">О курорте</a><i class="icon icon-left-arrow"></i></h4>
+          <ul>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Руководство</a></li>
+            <li><a href="#">Полезная информация</a></li>
+            <li><a href="#">Фотогалерея</a></li>
+            <li><a href="#">Награды</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Молочный Цех</a></li>
+            <li><a href="#">Участки ИЖС</a></li>
+          </ul>
+        </div>
+        <div class="menu__block">
+          <h4><a href="#">Санатории</a><i class="icon icon-left-arrow"></i></h4>
+          <ul>
+            <li><a href="#">Имени Ленина</a></li>
+            <li><a href="#">Дубки</a></li>
+            <li><a href="#">Прибрежный</a></li>
+            <li><a href="#">Белый Яр</a></li>
+          </ul>
+          <h4> <a href="#">Базы отдыха</a><i class="icon icon-left-arrow"></i></h4>
+          <ul>
+            <li><a href="#">Кепинг «Чайка»</a></li>
+            <li><a href="#">Прибрежный</a></li>
+            <li><a href="#">Белый Яр</a></li>
+            <li><a href="#">Слава Черноморья</a></li>
+            <li><a href="#">Лагерь «Сосенка»</a></li>
+          </ul>
+        </div>
+        <div class="menu__block">
+          <h4> <a href="#">Лечение</a><i class="icon icon-left-arrow"></i></h4>
+          <ul>
+            <li><a href="#">Профили </a></li>
+            <li><a href="#">Методики</a></li>
+            <li><a href="#">Особенности</a></li>
+          </ul>
+          <h4> <a href="#">Досуг</a><i class="icon icon-left-arrow"></i></h4>
+          <ul>
+            <li><a href="#">Анимация</a></li>
+            <li><a href="#">Экскурсии</a></li>
+            <li><a href="#">Конюшня</a></li>
+            <li><a href="#">Рыбалка</a></li>
+            <li><a href="#">Горные лыжи</a></li>
+          </ul>
+        </div>
+        <div class="menu__block">
+          <h4><a href="#">Контакты</a></h4>
+          <h4><a href="#">Цены</a></h4>
+          <h4><a href="#">Блог</a><i class="icon icon-left-arrow"></i></h4>
+          <ul>
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Статьи</a></li>
+          </ul>
+        </div>
+        <div class="menu__search"><input type="text" placeholder="Поиск по сайту"><i class="icon icon-search"></i></div>
+      </div>
+    </div>
+    <div id="step" class="modal step step-1">
+      <div class="modal__content">
+        <div class="step__block">
+          <div class="heading">
+            <h2>Оставьте свой отзыв</h2>
+            <p>Нам важно, что Вы думаете о санаториях и обслуживании.</p>
+          </div>
+          <form action="" class="form"><textarea placeholder="Ваш отзыв"></textarea><a href="#step-1" data-pop class="btn btn-sandy">Отправить</a></form>
+        </div>
+      </div>
+    </div>
+    <div id="step-1" class="modal step step-2">
+      <div class="modal__content">
+        <div class="step__block">
+          <div class="heading">
+            <h2>Где Вы отдыхали?</h2>
+            <p>Выберите санаторий или дом отдыха, а также время отдыха.</p>
+          </div>
+          <form action="" class="form">
+            <div class="form__block">
+              <div class="form__select"><i></i>
+                <p></p><select name="day"><option value="1">Имени В.И.Ленина</option><option value="2">Дубки</option><option value="3">Прибрежный</option></select><span>Где отдыхали?</span></div>
+              <div class="form__select"><i></i>
+                <p></p><select name="day"><option value="1">Август</option><option value="2">Июнь</option></select><span>В каком месяце?</span></div>
+              <div class="form__select"><i></i>
+                <p></p><select name="day"><option value="1">2017</option><option value="2">2016</option></select><span>Год отдыха</span></div>
+            </div><a href="#step-2" data-pop class="btn btn-sandy">Отправить</a></form>
+        </div>
+      </div>
+    </div>
+    <div id="step-2" class="modal step step-3">
+      <div class="modal__content">
+        <div class="step__block">
+          <div class="heading">
+            <h2>И последний вопрос</h2>
+            <p>Мы будем рады, если Вы представитесь.</p>
+          </div>
+          <form action="" class="form"><textarea placeholder="Ваш отзыв"></textarea><a href="#" class="btn btn-sandy next">Отправить</a></form>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="row">

@@ -1,0 +1,259 @@
+.menu
+  position: fixed
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 10
+  background: $very-light-pink
+  padding: 15px
+  display: none
+  +r(767)
+    padding: 0
+    &:before
+      content: ''
+      background: $mud-brown
+      width: 55px
+      height: 100%
+      position: absolute
+      top: 0
+      right: 0
+  &-close
+    position: fixed
+    right: 12px
+    top: 10px
+    width: 30px
+    height: 30px
+    span
+      width: 30px
+      height: 2px
+      display: block
+      transform: rotate(45deg)
+      background: $white
+      position: relative
+      top: 15px
+      &:before
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        transform: rotate(90deg)
+        width: 30px
+        height: 2px
+        background: $white
+  &__content
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding-top: 40px
+    margin-top: 60px
+    padding-right: 80px
+    overflow: scroll
+    height: calc(100% - 45px)
+    width: 100%
+    position: relative
+    z-index: 2
+    +r(767)
+      flex-direction: column
+      flex-wrap: nowrap
+      justify-content: flex-start
+      margin: 0
+      padding: 0
+      height: 100%
+      width: 100%
+    &::-webkit-scrollbar-thumb
+      border-radius: 3px
+      background-color: $sand
+    &::-webkit-scrollbar
+      width: 6px
+  &__block
+    padding-right: 20px
+    +r(767)
+      padding-right: 49px
+    &__tel
+      display: none
+      a
+        font-family: 'Anglecia Pro Title'
+        font-size: 22px
+        font-weight: 500
+        color: $mud-brown
+        padding: 15px
+        display: block
+      +r(767)
+        display: block
+    ul
+      margin-bottom: 55px
+      +r(767)
+        margin-bottom: 0
+        display: none
+        padding: 15px
+    li
+      a
+        font-size: 20px
+        font-weight: 300
+        line-height: 1
+        color: $mud
+        transition: none
+        +r(767)
+          font-size: 16px
+    h4
+      margin-bottom: 20px
+      display: block
+      position: relative
+      +r(767)
+        margin-bottom: 0
+      i
+        position: absolute
+        right: 20px
+        top: 50%
+        transform: rotate(-90deg) translate(50%)
+        color: $mud-brown
+        font-size: 15px
+        display: none
+        transition: all 0.3s
+        +r(767)
+          display: block
+      &.active
+        i
+          transform: rotate(90deg) translate(50%)
+          top: 26%
+      a
+        font-family: 'Anglecia Pro Title'
+        font-size: 30px
+        font-weight: 500
+        color: $mud-brown
+        display: block
+        +r(767)
+          background-color: $beige
+          border-bottom: $mud-brown solid 1px
+          padding: 15px
+          font-size: 20px
+  &__search
+    max-width: 750px
+    width: 100%
+    height: 40px
+    border-radius: 6px
+    border: solid 1px #644f43
+    +center-y
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    padding: 10px
+    margin-top: 60px
+    margin-bottom: 140px
+    +r(767)
+      width: calc(100% - 75px)
+      transform: none
+      left: 0
+      display: block
+      margin: 20px 0
+      margin-left: 15px
+    input
+      width: 100%
+      background: none
+      font-family: 'SF Pro Display'
+      font-size: 16px
+      text-align: left
+      padding: 10px
+      color: $mud
+      +r(767)
+        position: relative
+        top: -9px
+      &::placeholder
+        color: $mud
+    i
+      font-size: 20px
+      color: $mud-brown
+      cursor: pointer
+      +r(767)
+        position: absolute
+        right: 10px
+
+.modal
+  display: none
+  &__content
+    +center
+    width: 100%
+    height: 100%
+.step
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  background: $white
+  z-index: 20
+  overflow: scroll
+  &__block
+    width: 750px
+  .form
+    width: 100%
+    textarea
+      height: 200px
+      width: 100%
+      border: solid 2px $sandy
+      margin: 50px 0
+      font-size: 24px
+      font-weight: 300
+      line-height: 1.25
+      color: $sand
+      padding: 10px 20px
+      resize: none
+      &::placeholder
+        color: $sand
+    &__block
+      display: flex
+    &__select
+      margin: 0 auto 10px
+      width: 260px
+      position: relative
+      +r(767)
+        width: 100%
+        margin: 0
+        margin-bottom: 50px
+      span
+        font-family: 'SF Pro Display'
+        font-size: 12px
+        text-align: center
+        color: $sand
+        display: block
+        position: absolute
+        bottom: -20px
+        left: 50%
+        transform: translate(-50%)
+      select
+        width: 100%
+        height: 34px
+        position: reative
+        border: none
+        cursor: pointer
+        opacity: 0
+      p
+        width: 100%
+        height: 100%
+        position: absolute
+        left: 0
+        top: 0
+        overflow: hidden
+        font-size: 24px
+        font-weight: 300
+        line-height: 1.25
+        text-align: center
+        color: $mud
+        border-bottom: 2px solid $sandy
+        +r(767)
+          font-size: 18px
+        &:before
+          content: ''
+          position: absolute
+          right: 0
+          top: 8px
+          width: 0
+          height: 0
+          border-left: 7px solid transparent
+          border-right: 7px solid transparent
+          border-top: 11px solid $mud-brown
+    .btn
+      margin: 0 auto
+.step-1
+  .step__block
+    width: 900px
