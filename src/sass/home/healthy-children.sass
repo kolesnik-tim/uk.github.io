@@ -3,6 +3,16 @@
   background: url('../img/healthy-children-bg.png')
   background-repeat: no-repeat
   background-size: cover
+  position: relative
+  &:before
+    content: ''
+    width: 100%
+    height: 100%
+    filter: blur(5px)
+    position: absolute
+    top: 0
+    z-index: 99999
+    display: block
   +r(767)
     height: 500px
   &__content
