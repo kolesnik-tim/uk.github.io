@@ -105,7 +105,7 @@
         p Нам важно, что Вы думаете о санаториях и обслуживании.
       form(action="").form
         textarea(placeholder="Ваш отзыв")
-        a(href="#step-1" data-pop).btn.btn-sandy Отправить
+        +btn-sandy('Отправить', '#step-1', 'data-pop')(class="btn-sandy")
 
 
 .modal.step.step-2#step-1
@@ -138,8 +138,7 @@
               option(value="1") 2017
               option(value="2") 2016
             span Год отдыха
-        a(href="#step-2" data-pop).btn.btn-sandy Отправить
-
+        +btn-sandy('Отправить', '#step-2', 'data-pop')(class="btn-sandy")
 
 .modal.step.step-3#step-2
   .modal__content
@@ -163,7 +162,7 @@
               i.icon.icon-fb
             a(href="#")
               i.icon.icon-ok
-        a(href="#").btn.btn-sandy.next Отправить
+        +btn-sandy('Отправить', '#', 'data-pop')(class="btn-sandy next")
 
 
 
@@ -184,7 +183,7 @@
             input(type="email" placeholder="E-mail")
             span Адрес e-mail
         textarea(placeholder="Ваш вопрос")
-        a(href="#").btn.btn-sandy.next Отправить
+        +btn-sandy('Отправить', '#', 'data-pop')(class="btn-sandy")
         .form__checkbox.checkbox
           input(type="checkbox" id='checkbox')
           label(for="checkbox") Нажимая кнопку «Отправить», я даю своё согласие на обработку 
@@ -209,7 +208,7 @@
           .form__input
             input(type="email" placeholder="E-mail")
             span Адрес e-mail
-        a(href="#").btn.btn-sandy.next Отправить
+        +btn-sandy('Отправить', '#', 'data-pop')(class="btn-sandy")
         .form__checkbox.checkbox
           input(type="checkbox" id='checkbox-1')
           label(for="checkbox-1") Нажимая кнопку «Отправить», я даю своё согласие на обработку 
@@ -271,7 +270,7 @@
           .form__input
             input(type="email" placeholder="E-mail")
             span Адрес e-mail
-          a(href="#").btn.btn-sandy.next Отправить
+          +btn-sandy('Отправить', '#', 'data-pop')(class="btn-sandy")
           .form__checkbox.checkbox
             input(type="checkbox" id='checkbox-1')
             label(for="checkbox-1") Нажимая кнопку «Отправить», я даю своё согласие на обработку 
@@ -286,17 +285,17 @@
             .swiper-slide__block
               h2 Апартаменты
               p Комфортабельный двухместный номер, возможно заселение на два дополнительных места
-              a(href="#").btn.btn-sandy Цены от 6 250 ₽
+              +btn-sandy('Цены от 6 250 ₽', '#', 'data-pop')(class="btn-sandy")
           .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
             .swiper-slide__block
               h2 Апартаменты
               p Комфортабельный двухместный номер, возможно заселение на два дополнительных места
-              a(href="#").btn.btn-sandy Цены от 6 250 ₽
+              +btn-sandy('Цены от 6 250 ₽', '#', 'data-pop')(class="btn-sandy")
           .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
             .swiper-slide__block
               h2 Апартаменты
               p Комфортабельный двухместный номер, возможно заселение на два дополнительных места
-              a(href="#").btn.btn-sandy Цены от 6 250 ₽
+              +btn-sandy('Цены от 6 250 ₽', '#', 'data-pop')(class="btn-sandy")
         .swiper-pagination.swiper-pop-rooms-2-pagination
         .swiper-button-next.swiper-pop-rooms-2-next
           i.icon.icon-right-arrow

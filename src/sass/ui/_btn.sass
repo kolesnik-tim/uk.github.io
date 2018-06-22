@@ -4,14 +4,68 @@
   font-family: 'Anglecia Pro Title'
   font-size: 20px
   font-weight: 500
+  color: $white
   +center
+  .cls-1, .cls-5
+    transition: all 0.3s
+  b
+    line-height: 1
   &-transparent
-    color: $white
-    background: url('../img/button-inline.svg')
-    background-repeat: no-repeat
-    background-size: 100% 100%
-    border-radius: 7px
+    position: relative
+    svg
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+    .cls-5
+      fill: transparent
+    b
+      position: relative
+      z-index: 2
+    &:hover
+      .cls-5
+        fill: rgba(255, 255, 255, 0.5)
+      b
+        color: #333333
+    &:active
+      .cls-5
+        fill: $white
   &-sandy
-    background: $sandy
-    color: $mud-brown
+    position: relative
+    svg
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+    b
+      color: $mud-brown
+      position: relative
+      z-index: 2
+    &:hover
+      .cls-1
+        fill: #fbedac
+    &:active
+      .cls-1
+        fill: #e0bf57
   &-white
+    position: relative
+    svg
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 1
+    .cls-1-bg
+      fill: $white
+    b
+      color: $mud-brown
+      position: relative
+      z-index: 2
+    &:hover
+      .cls-1-bg
+        fill: #fbedac
+    &:active
+      .cls-1-bg
+        fill: #e0bf57

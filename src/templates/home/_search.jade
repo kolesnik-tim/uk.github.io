@@ -10,7 +10,7 @@ sectin.search
           .form__input
             input(type="text")
             span Что ищем?
-          input(type="submit" value="Найти").btn.btn-sandy
+          +btn-sandy('Найти')(class="btn-sandy")
 section.search
   .container
     .row
@@ -21,7 +21,7 @@ section.search
         form(action="").form
           .form__input
             input(type="text")
-          input(type="submit" value="Найти").btn.btn-sandy
+          +btn-sandy('Найти')(class="btn-sandy")
       .col-xs-12
         h4 По вашему запросу показано 1-20 и 231 совпадений:
         ol
