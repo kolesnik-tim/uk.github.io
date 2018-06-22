@@ -99,6 +99,11 @@ a
       margin-right: 10px
       display: block
       margin-bottom: 10px
+      border: 1px solid $white
+      &:hover
+        border: solid 1px $sandy
+      &:active
+        background-color: $sandy
       +r(767)
         font-size: 14px
   .all-tags
@@ -111,3 +116,41 @@ a
     margin-top: 10px
     margin-bottom: 70px
     text-align: center
+
+.checkbox
+  input
+    display: none
+  input + label
+    font-size: 18px
+    line-height: 1.33
+    color: $sand
+    position: relative
+    font-family: 'Anglecia Pro Text'
+    padding-left: 40px
+    display: block
+    +r(767)
+      font-size: 16px
+    a
+      color: $dark-sky-blue
+  input + label:before
+    content: '\EA01'
+    width: 30px
+    height: 30px
+    border-radius: 6px
+    position: absolute
+    left: 0
+    border: 1px solid $sand
+    display: flex
+    top: -8px
+    font-family: 'iconfont'
+    font-size: 12px
+    justify-content: center
+    align-items: center
+    color: transparent
+    +r(767)
+      font-size: 8px
+      width: 20px
+      height: 20px
+      top: -3px
+  input:checked + label:before
+    color: $sand

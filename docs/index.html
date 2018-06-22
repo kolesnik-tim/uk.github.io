@@ -34,10 +34,10 @@
           <nav>
             <ul>
               <li><a href="#step" data-pop>Лечение</a></li>
-              <li><a href="#">Санатории</a></li>
-              <li><a href="#">Уникальность</a></li>
-              <li><a href="#">Досуг</a></li>
-              <li><a href="#">Дома отдыха</a></li>
+              <li><a href="#pop-question" data-pop>Санатории</a></li>
+              <li><a href="#pop-application" data-pop>Уникальность</a></li>
+              <li><a href="#pop-gallery" data-pop>Досуг</a></li>
+              <li><a href="#pop-rooms" data-pop>Дома отдыха</a></li>
               <li><a href="#">Цены</a></li>
               <li><a href="#">Забронировать</a><i class="icon icon-ring"></i></li>
             </ul>
@@ -1458,7 +1458,136 @@
             <h2>И последний вопрос</h2>
             <p>Мы будем рады, если Вы представитесь.</p>
           </div>
-          <form action="" class="form"><textarea placeholder="Ваш отзыв"></textarea><a href="#" class="btn btn-sandy next">Отправить</a></form>
+          <form action="" class="form">
+            <div class="form__block">
+              <div class="form__input"><input type="text" placeholder="Как к Вам обращаться?"></div>
+              <div class="form__input"><input type="email" placeholder="E-mail"><span>Адрес e-mail</span></div>
+            </div>
+            <div class="form__social"><span>Поделитесь этим с друзьями:</span>
+              <div class="form__social__block"><a href="#"><i class="icon icon-vk"></i></a><a href="#"><i class="icon icon-fb"></i></a><a href="#"><i class="icon icon-ok"></i></a></div>
+            </div><a href="#" class="btn btn-sandy next">Отправить</a></form>
+        </div>
+      </div>
+    </div>
+    <div id="pop-question" class="modal pop-question">
+      <div class="modal__close"><span></span></div>
+      <div class="modal__content">
+        <div class="pop-question__content">
+          <div class="heading">
+            <h2>Задайте свой вопрос</h2>
+            <p>Наши врачи ответят на все ваши вопросы.</p>
+          </div>
+          <form action="" class="form">
+            <div class="form__block">
+              <div class="form__input"><input type="text" placeholder="Как к Вам обращаться?"></div>
+              <div class="form__input"><input type="email" placeholder="E-mail"><span>Адрес e-mail</span></div>
+            </div><textarea placeholder="Ваш вопрос"></textarea><a href="#" class="btn btn-sandy next">Отправить</a>
+            <div class="form__checkbox checkbox"><input type="checkbox" id="checkbox"><label for="checkbox">Нажимая кнопку «Отправить», я даю своё согласие на обработку <a href="#">персональных данных.</a></label></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="pop-application" class="modal pop-application">
+      <div class="modal__close"><span></span></div>
+      <div class="modal__content">
+        <div class="pop-application__content">
+          <div class="heading">
+            <h2>Заявка на санаторно-курортные услуги</h2>
+            <p>Наши менеджеры свяжутся с вами через несколько минут для уточнения даты и условий пребывания в санатории.</p>
+          </div>
+          <form action="" class="form">
+            <div class="form__block">
+              <div class="form__input"><input type="text" placeholder="Как к Вам обращаться?"></div>
+              <div class="form__input"><input type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _" class="phone"><span>Номер телефона</span></div>
+              <div class="form__input"><input type="email" placeholder="E-mail"><span>Адрес e-mail</span></div>
+            </div><a href="#" class="btn btn-sandy next">Отправить</a>
+            <div class="form__checkbox checkbox"><input type="checkbox" id="checkbox-1"><label for="checkbox-1">Нажимая кнопку «Отправить», я даю своё согласие на обработку <a href="#">персональных данных.</a></label></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="pop-gallery" class="modal pop-gallery">
+      <div class="modal__close"><span></span></div>
+      <div class="swiper-container swiper-pop-gallery">
+        <div class="swiper-wrapper">
+          <div style="background-image: url('img/jessica-ruscello-120993.png')" class="swiper-slide">
+            <p>Закат на берегу водохранилища, рядом с санаторием Дубки</p>
+          </div>
+          <div style="background-image: url('img/jessica-ruscello-120993.png')" class="swiper-slide">
+            <p>Закат на берегу водохранилища, рядом с санаторием Дубки</p>
+          </div>
+          <div style="background-image: url('img/jessica-ruscello-120993.png')" class="swiper-slide">
+            <p>Закат на берегу водохранилища, рядом с санаторием Дубки</p>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pop-gallery-pagination"></div>
+        <div class="swiper-button-next swiper-pop-gallery-next"><i class="icon icon-right-arrow"></i></div>
+        <div class="swiper-button-prev swiper-pop-gallery-prev"><i class="icon icon-left-arrow"></i></div>
+      </div>
+    </div>
+    <div id="pop-rooms" class="modal pop-rooms">
+      <div class="modal__close"><span></span></div>
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <div class="pop-rooms__block">
+            <h4>Одноместный номер в санаторий им. В. И. Ленина</h4><span>от 1 930 ₽</span>
+            <p>Уютный одноместный номер со всеми удобствами. Возможно заселение на дополнительное место.</p>
+            <div class="swiper-container swiper-pop-rooms-1">
+              <div class="swiper-wrapper">
+                <div style="background-image: url('img/jessica-ruscello-120993.png')" class="swiper-slide"></div>
+                <div style="background-image: url('img/jessica-ruscello-120993.png')" class="swiper-slide"></div>
+                <div style="background-image: url('img/jessica-ruscello-120993.png')" class="swiper-slide"></div>
+              </div>
+              <div class="swiper-pagination swiper-pop-rooms-1-pagination"></div>
+              <div class="swiper-button-next swiper-pop-rooms-1-next"><i class="icon icon-right-arrow"></i></div>
+              <div class="swiper-button-prev swiper-pop-rooms-1-prev"><i class="icon icon-left-arrow"></i></div>
+            </div>
+            <ul>
+              <li>Максимальное размещение – 2 человека + 2 дополнительных места</li>
+              <li>холодильник</li>
+              <li>телевизор</li>
+              <li>кондиционер</li>
+              <li>с/у с душевой кабиной / ванной</li>
+              <li>фен</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="pop-rooms__form">
+            <h4>Оставить заявку</h4>
+            <p>Наши менеджеры свяжутся с вами через несколько минут для уточнения даты и условий пребывания в санатории.</p>
+            <form action="" class="form">
+              <div class="form__input"><input type="text" placeholder="Ваше имя"></div>
+              <div class="form__input"><input type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _" class="phone"><span>Номер телефона</span></div>
+              <div class="form__input"><input type="email" placeholder="E-mail"><span>Адрес e-mail</span></div><a href="#" class="btn btn-sandy next">Отправить</a>
+              <div class="form__checkbox checkbox"><input type="checkbox" id="checkbox-1"><label for="checkbox-1">Нажимая кнопку «Отправить», я даю своё согласие на обработку <a href="#">персональных данных.</a></label></div>
+            </form>
+          </div>
+          <div class="pop-rooms__info"><a href="#">Необходимые документы</a><a href="#">Правила пребывания</a></div>
+        </div>
+        <div class="col-xs-12">
+          <div class="swiper-container swiper-pop-rooms-2">
+            <div class="swiper-wrapper">
+              <div style="background-image: url('img/jessica-ruscello-120993.png')" class="swiper-slide">
+                <div class="swiper-slide__block">
+                  <h2>Апартаменты</h2>
+                  <p>Комфортабельный двухместный номер, возможно заселение на два дополнительных места</p><a href="#" class="btn btn-sandy">Цены от 6 250 ₽</a></div>
+              </div>
+              <div style="background-image: url('img/jessica-ruscello-120993.png')" class="swiper-slide">
+                <div class="swiper-slide__block">
+                  <h2>Апартаменты</h2>
+                  <p>Комфортабельный двухместный номер, возможно заселение на два дополнительных места</p><a href="#" class="btn btn-sandy">Цены от 6 250 ₽</a></div>
+              </div>
+              <div style="background-image: url('img/jessica-ruscello-120993.png')" class="swiper-slide">
+                <div class="swiper-slide__block">
+                  <h2>Апартаменты</h2>
+                  <p>Комфортабельный двухместный номер, возможно заселение на два дополнительных места</p><a href="#" class="btn btn-sandy">Цены от 6 250 ₽</a></div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pop-rooms-2-pagination"></div>
+            <div class="swiper-button-next swiper-pop-rooms-2-next"><i class="icon icon-right-arrow"></i></div>
+            <div class="swiper-button-prev swiper-pop-rooms-2-prev"><i class="icon icon-left-arrow"></i></div>
+          </div>
         </div>
       </div>
     </div>

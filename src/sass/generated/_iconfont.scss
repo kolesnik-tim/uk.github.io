@@ -9,18 +9,19 @@
   font-style: normal;
 }
 
-$icon-fb: "\EA01";
-$icon-instagram: "\EA02";
-$icon-left-arrow: "\EA03";
-$icon-logo-author: "\EA04";
-$icon-ok: "\EA05";
-$icon-person: "\EA06";
-$icon-play: "\EA07";
-$icon-right-arrow: "\EA08";
-$icon-ring: "\EA09";
-$icon-search: "\EA0A";
-$icon-vk: "\EA0B";
-$icon-yt: "\EA0C";
+$icon-combined-shape: "\EA01";
+$icon-fb: "\EA02";
+$icon-instagram: "\EA03";
+$icon-left-arrow: "\EA04";
+$icon-logo-author: "\EA05";
+$icon-ok: "\EA06";
+$icon-person: "\EA07";
+$icon-play: "\EA08";
+$icon-right-arrow: "\EA09";
+$icon-ring: "\EA0A";
+$icon-search: "\EA0B";
+$icon-vk: "\EA0C";
+$icon-yt: "\EA0D";
 
 
 %icon {
@@ -39,6 +40,7 @@ $icon-yt: "\EA0C";
   display: inline-block;
 }
 
+.icon-combined-shape:before { content: $icon-combined-shape; }
 .icon-fb:before { content: $icon-fb; }
 .icon-instagram:before { content: $icon-instagram; }
 .icon-left-arrow:before { content: $icon-left-arrow; }

@@ -18,7 +18,9 @@
         <style>
             .cls-1{fill:#c0d5b3;fill-rule:evenodd}
         </style>
-    </defs><symbol id="icon-fb" viewBox="0 0 22 22">
+    </defs><symbol id="icon-combined-shape" viewBox="0 0 18 12">
+    <path fill-rule="evenodd" d="M6.825 9.565L16.25.295c.4-.393 1.05-.393 1.45 0 .4.394.4 1.033 0 1.427L7.55 11.705c-.4.393-1.05.393-1.45 0L.3 6a.997.997 0 0 1 0-1.426c.4-.394 1.05-.394 1.45 0l5.075 4.991z"/>
+</symbol><symbol id="icon-fb" viewBox="0 0 22 22">
     
     <title>
         social_fb

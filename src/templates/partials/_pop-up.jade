@@ -148,5 +148,157 @@
         h2 И последний вопрос
         p Мы будем рады, если Вы представитесь.
       form(action="").form
-        textarea(placeholder="Ваш отзыв")
+        .form__block
+          .form__input
+            input(type="text" placeholder="Как к Вам обращаться?")
+          .form__input
+            input(type="email" placeholder="E-mail")
+            span Адрес e-mail
+        .form__social
+          span Поделитесь этим с друзьями:
+          .form__social__block
+            a(href="#")
+              i.icon.icon-vk
+            a(href="#")
+              i.icon.icon-fb
+            a(href="#")
+              i.icon.icon-ok
         a(href="#").btn.btn-sandy.next Отправить
+
+
+
+
+.modal.pop-question#pop-question
+  .modal__close
+    span
+  .modal__content
+    .pop-question__content
+      .heading
+        h2 Задайте свой вопрос
+        p Наши врачи ответят на все ваши вопросы.
+      form(action="").form
+        .form__block
+          .form__input
+            input(type="text" placeholder="Как к Вам обращаться?")
+          .form__input
+            input(type="email" placeholder="E-mail")
+            span Адрес e-mail
+        textarea(placeholder="Ваш вопрос")
+        a(href="#").btn.btn-sandy.next Отправить
+        .form__checkbox.checkbox
+          input(type="checkbox" id='checkbox')
+          label(for="checkbox") Нажимая кнопку «Отправить», я даю своё согласие на обработку 
+            a(href="#") персональных данных.
+
+
+.modal.pop-application#pop-application
+  .modal__close
+    span
+  .modal__content
+    .pop-application__content
+      .heading
+        h2 Заявка на санаторно-курортные услуги
+        p Наши менеджеры свяжутся с вами через несколько минут для уточнения даты и условий пребывания в санатории.
+      form(action="").form
+        .form__block
+          .form__input
+            input(type="text" placeholder="Как к Вам обращаться?")
+          .form__input
+            input(type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _").phone
+            span Номер телефона
+          .form__input
+            input(type="email" placeholder="E-mail")
+            span Адрес e-mail
+        a(href="#").btn.btn-sandy.next Отправить
+        .form__checkbox.checkbox
+          input(type="checkbox" id='checkbox-1')
+          label(for="checkbox-1") Нажимая кнопку «Отправить», я даю своё согласие на обработку 
+            a(href="#") персональных данных.
+
+.modal.pop-gallery#pop-gallery
+  .modal__close
+    span
+  .swiper-container.swiper-pop-gallery
+    .swiper-wrapper
+      .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
+        p Закат на берегу водохранилища, рядом с санаторием Дубки
+      .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
+        p Закат на берегу водохранилища, рядом с санаторием Дубки
+      .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
+        p Закат на берегу водохранилища, рядом с санаторием Дубки
+    .swiper-pagination.swiper-pop-gallery-pagination
+    .swiper-button-next.swiper-pop-gallery-next
+      i.icon.icon-right-arrow
+    .swiper-button-prev.swiper-pop-gallery-prev
+      i.icon.icon-left-arrow
+
+.modal.pop-rooms#pop-rooms
+  .modal__close
+    span
+  .row
+    .col-md-6.col-xs-12
+      .pop-rooms__block
+        h4 Одноместный номер в санаторий им. В. И. Ленина
+        span от 1 930 ₽
+        p Уютный одноместный номер со всеми удобствами. Возможно заселение на дополнительное место.
+        .swiper-container.swiper-pop-rooms-1
+          .swiper-wrapper
+            .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
+            .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
+            .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
+          .swiper-pagination.swiper-pop-rooms-1-pagination
+          .swiper-button-next.swiper-pop-rooms-1-next
+            i.icon.icon-right-arrow
+          .swiper-button-prev.swiper-pop-rooms-1-prev
+            i.icon.icon-left-arrow
+        ul
+          li Максимальное размещение – 2 человека + 2 дополнительных места
+          li холодильник
+          li телевизор
+          li кондиционер
+          li с/у с душевой кабиной / ванной
+          li фен
+    .col-xs-12.col-md-6
+      .pop-rooms__form
+        h4 Оставить заявку
+        p Наши менеджеры свяжутся с вами через несколько минут для уточнения даты и условий пребывания в санатории.
+        form(action="").form
+          .form__input
+            input(type="text" placeholder="Ваше имя")
+          .form__input
+            input(type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _").phone
+            span Номер телефона
+          .form__input
+            input(type="email" placeholder="E-mail")
+            span Адрес e-mail
+          a(href="#").btn.btn-sandy.next Отправить
+          .form__checkbox.checkbox
+            input(type="checkbox" id='checkbox-1')
+            label(for="checkbox-1") Нажимая кнопку «Отправить», я даю своё согласие на обработку 
+              a(href="#") персональных данных.
+      .pop-rooms__info
+        a(href="#") Необходимые документы
+        a(href="#") Правила пребывания
+    .col-xs-12
+      .swiper-container.swiper-pop-rooms-2
+        .swiper-wrapper
+          .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
+            .swiper-slide__block
+              h2 Апартаменты
+              p Комфортабельный двухместный номер, возможно заселение на два дополнительных места
+              a(href="#").btn.btn-sandy Цены от 6 250 ₽
+          .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
+            .swiper-slide__block
+              h2 Апартаменты
+              p Комфортабельный двухместный номер, возможно заселение на два дополнительных места
+              a(href="#").btn.btn-sandy Цены от 6 250 ₽
+          .swiper-slide(style="background-image: url('img/jessica-ruscello-120993.png')")
+            .swiper-slide__block
+              h2 Апартаменты
+              p Комфортабельный двухместный номер, возможно заселение на два дополнительных места
+              a(href="#").btn.btn-sandy Цены от 6 250 ₽
+        .swiper-pagination.swiper-pop-rooms-2-pagination
+        .swiper-button-next.swiper-pop-rooms-2-next
+          i.icon.icon-right-arrow
+        .swiper-button-prev.swiper-pop-rooms-2-prev
+          i.icon.icon-left-arrow

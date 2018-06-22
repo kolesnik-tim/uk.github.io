@@ -1,4 +1,4 @@
-
+import Swiper from 'swiper';
 //menu
 if($(window).width() < 767) {
   $('.menu-open').on('click', function() {
@@ -32,14 +32,59 @@ if($(window).width() < 767) {
 
 
 
+//pop-gallery
+var swiper = new Swiper('.swiper-pop-gallery', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-pop-gallery-next',
+    prevEl: '.swiper-pop-gallery-prev',
+  },
+  pagination: {
+    el: '.swiper-pop-gallery-pagination',
+    clickable: true,
+  },
+});
+
+//pop-rooms-1
+var swiper1 = new Swiper('.swiper-pop-rooms-1', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-pop-rooms-1-next',
+    prevEl: '.swiper-pop-rooms-1-prev',
+  },
+  pagination: {
+    el: '.swiper-pop-rooms-1-pagination',
+    clickable: true,
+  },
+});
+
+
+//pop-rooms-2
+var swiper2 = new Swiper('.swiper-pop-rooms-2', {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.swiper-pop-rooms-2-next',
+    prevEl: '.swiper-pop-rooms-2-prev',
+  },
+  pagination: {
+    el: '.swiper-pop-rooms-2-pagination',
+    clickable: true,
+  },
+});
+
+
 //pop-up
 $('[data-pop]').on('click', function() {
   let id = $(this).attr('href');
   $(id).fadeIn();
   $('body').addClass('no-scroll');
+  swiper.update();
+  swiper1.update();
+  swiper2.update();
 });
 
-$('.pop-up__close, .next').on('click', function() {
+$('.modal__close, .next').on('click', function() {
   $('.modal').fadeOut();
   $('body').removeClass('no-scroll');
 });
+

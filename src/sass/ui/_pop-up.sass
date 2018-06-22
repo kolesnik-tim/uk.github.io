@@ -170,19 +170,48 @@
 
 .modal
   display: none
-  &__content
-    +center
-    width: 100%
-    height: 100%
-.step
   position: fixed
   top: 0
   left: 0
   width: 100%
-  height: 100vh
-  background: $white
+  height: 100%
   z-index: 20
-  overflow: scroll
+  overflow-y: scroll
+  padding: 40px 20px
+  &__content
+    +center
+    height: 100%
+    +rh(600)
+      height: auto
+  &__close
+    position: absolute
+    right: 20px
+    top: 20px
+    width: 30px
+    height: 30px
+    z-index: 99
+    +r(767)
+      right: 10px
+      top: 10px
+    span
+      width: 30px
+      height: 2px
+      display: block
+      transform: rotate(45deg)
+      background: $mud-brown
+      position: relative
+      top: 15px
+      &:before
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        transform: rotate(90deg)
+        width: 30px
+        height: 2px
+        background: $mud-brown
+.step
+  background: $white
   &__block
     width: 750px
   .form
@@ -198,14 +227,25 @@
       color: $sand
       padding: 10px 20px
       resize: none
+      +r(767)
+        font-size: 18px
       &::placeholder
         color: $sand
     &__block
       display: flex
+      +r(767)
+        flex-wrap: wrap
+        margin-top: 40px
     &__select
-      margin: 0 auto 10px
       width: 260px
       position: relative
+      margin-top: 50px
+      margin-bottom: 80px
+      margin-right: 30px
+      &:nth-child(3)
+        margin-right: 0
+      +r(1024)
+        width: 230px
       +r(767)
         width: 100%
         margin: 0
@@ -238,10 +278,11 @@
         font-weight: 300
         line-height: 1.25
         text-align: center
-        color: $mud
+        color: $mud-brown
         border-bottom: 2px solid $sandy
         +r(767)
           font-size: 18px
+          line-height: 2.5
         &:before
           content: ''
           position: absolute
@@ -249,11 +290,418 @@
           top: 8px
           width: 0
           height: 0
-          border-left: 7px solid transparent
-          border-right: 7px solid transparent
-          border-top: 11px solid $mud-brown
+          border-left: 5px solid transparent
+          border-right: 5px solid transparent
+          border-top: 9px solid $mud-brown
+    &__input
+      margin-right: 35px
+      margin-top: 50px
+      margin-bottom: 30px
+      width: 360px
+      &:last-child
+        margin-right: 0
+      +r(767)
+        margin-bottom: 20px
+        margin-right: 0
+        margin-top: 0
+        width: 100%
+      input
+        text-align: center
+        color: $sand
+        background: none
+        border-bottom: 2px solid $sandy
+        padding-bottom: 5px
+        font-size: 24px
+        font-weight: 300
+        line-height: 1.25
+        color: $mud-brown
+        width: 100%
+        font-family: 'Anglecia Pro Text'
+        +r(767)
+          font-size: 18px
+        &::placeholder
+          color: #d6c18f
+      span
+        text-align: center
+        display: block
+        font-family: 'SF Pro Display'
+        font-size: 12px
+        margin-top: 5px
+        color: $sand
+    &__social
+      +center
+      margin-bottom: 55px
+      +r(767)
+        flex-direction: column
+      &__block
+        +r(767)
+          padding-top: 20px
+      span
+        font-family: 'SF Pro Display'
+        font-size: 16px
+        line-height: 1.25
+        color: $dark-khaki
+        display: block
+        margin-right: 20px
+      a
+        margin-right: 20px
+        i
+          color: $dark-sky-blue
+          font-size: 20px
     .btn
       margin: 0 auto
-.step-1
+.step-2
   .step__block
     width: 900px
+  .form__block
+    justify-content: space-between
+
+
+
+
+.pop-question
+  background-color: $very-light-pink
+  &__content
+    .form
+      +center-column
+      &__block
+        display: flex
+        max-width: 750px
+        +r(767)
+          flex-wrap: wrap
+          margin-top: 40px
+          width: 100%
+      &__checkbox
+        margin-top: 40px
+      &__input
+        margin-right: 35px
+        margin-top: 50px
+        margin-bottom: 30px
+        width: 360px
+        &:last-child
+          margin-right: 0
+        +r(767)
+          margin-bottom: 20px
+          margin-right: 0
+          margin-top: 0
+          width: 100%
+        input
+          text-align: center
+          color: $sand
+          background: none
+          border-bottom: 2px solid $sandy
+          padding-bottom: 5px
+          font-size: 24px
+          font-weight: 300
+          line-height: 1.25
+          color: $mud-brown
+          width: 100%
+          font-family: 'Anglecia Pro Text'
+          +r(767)
+            font-size: 18px
+          &::placeholder
+            color: #d6c18f
+        span
+          text-align: center
+          display: block
+          font-family: 'SF Pro Display'
+          font-size: 12px
+          margin-top: 5px
+          color: $sand
+      textarea
+        height: 150px
+        max-width: 750px
+        width: 100%
+        border: solid 2px $sandy
+        margin-bottom: 50px
+        font-size: 24px
+        font-weight: 300
+        line-height: 1.25
+        color: $sand
+        padding: 10px 20px
+        resize: none
+        background: $very-light-pink
+        +r(767)
+          font-size: 18px
+        &::placeholder
+          color: $sand
+
+
+
+.pop-application
+  background-color: $very-light-pink
+  .heading
+    h2
+      max-width: 900px
+  &__content
+    .form
+      +center-column
+      &__block
+        display: flex
+        max-width: 900px
+        +r(900)
+          flex-wrap: wrap
+          margin-top: 40px
+          width: 100%
+      &__checkbox
+        margin-top: 40px
+      &__input
+        margin-right: 35px
+        margin-top: 50px
+        margin-bottom: 30px
+        width: 360px
+        &:last-child
+          margin-right: 0
+        +r(900)
+          margin-bottom: 40px
+          margin-right: 0
+          margin-top: 0
+          width: 100%
+        input
+          text-align: center
+          color: $sand
+          background: none
+          border-bottom: 2px solid $sandy
+          padding-bottom: 5px
+          font-size: 24px
+          font-weight: 300
+          line-height: 1.25
+          color: $mud-brown
+          width: 100%
+          font-family: 'Anglecia Pro Text'
+          +r(767)
+            font-size: 18px
+          &::placeholder
+            color: #d6c18f
+        span
+          text-align: center
+          display: block
+          font-family: 'SF Pro Display'
+          font-size: 12px
+          margin-top: 5px
+          color: $sand
+
+.pop-gallery
+  &.modal
+    padding: 0
+  p
+    position: absolute
+    bottom: 100px
+    left: 50%
+    transform: translate(-50%)
+    font-family: 'Anglecia Pro Title'
+    font-size: 18px
+    font-weight: 500
+    text-align: center
+    color: $white
+    text-shadow: 0 2px 10px #000000
+    +r(767)
+      font-size: 16px
+  .swiper-button-next, .swiper-button-prev
+    +r(1024)
+      display: block
+  .swiper-container
+    width: 100%
+    height: 100%
+  .swiper-slide
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+  .swiper-pagination
+    +center
+    bottom: 70px
+    &-bullet
+      width: 10px
+      height: 10px
+      background: $white
+      opacity: 1
+      border: none
+      &-active
+        background: none
+        width: 12px
+        height: 12px
+        border: 2px solid $white
+
+
+.pop-rooms
+  background: $white
+  border: 15px solid $very-light-pink
+  padding: 70px 100px
+  padding-right: 70px
+  overflow-x: hidden
+  +r(767)
+    padding: 30px
+  +r(400)
+    padding: 5px
+  &::-webkit-scrollbar-thumb
+    border-radius: 3px
+    background-color: $sand
+  &::-webkit-scrollbar
+    width: 6px
+  &__block
+    h4
+      font-family: 'Anglecia Pro Title'
+      font-size: 30px
+      font-weight: 500
+      line-height: 1.33
+      color: $mud-brown
+      margin-bottom: 20px
+      +r(767)
+        font-size: 24px
+    span
+      font-family: 'Anglecia Pro Title'
+      font-size: 60px
+      font-weight: 500
+      color: $very-light-brown
+      margin-bottom: 25px
+      display: block
+      +r(767)
+        font-size: 30px
+    p
+      font-size: 24px
+      font-weight: 300
+      color: $mud
+      margin-bottom: 40px
+      +r(767)
+        font-size: 18px
+    .swiper-container
+      width: 100%
+      height: 270px
+      box-shadow: 0 10px 20px 0 rgba(66, 42, 25, 0.15)
+    ul
+      list-style: disc
+      padding-right: 25px
+      margin-top: 40px
+      +r(400)
+        margin-left: 40px
+    li
+      font-size: 20px
+      font-weight: 300
+      line-height: 1.5
+      color: $mud
+      margin-bottom: 10px
+      +r(767)
+        font-size: 16px
+  &__form
+    box-shadow: 0 10px 20px 0 rgba(66, 42, 25, 0.15)
+    background-color: $white
+    border: solid 4px #f6efe5
+    padding: 30px
+    margin-left: 15px
+    +r(400)
+      padding: 10px
+    +r(1200)
+      margin-left: 0
+      margin-top: 30px
+    p
+      font-size: 24px
+      font-weight: 300
+      color: $mud
+      margin-bottom: 50px
+      text-align: center
+      +r(767)
+        font-size: 18px
+    h4
+      font-family: 'Anglecia Pro Title'
+      font-size: 30px
+      font-weight: 500
+      line-height: 1.33
+      color: $mud-brown
+      text-align: center
+      margin-bottom: 30px
+      +r(767)
+        font-size: 24px
+    .form
+      +center-column
+      .checkbox
+        margin-top: 40px
+      &__input
+        margin-bottom: 30px
+        width: 100%
+        input
+          text-align: center
+          color: $sand
+          background: none
+          border-bottom: 2px solid $sandy
+          padding-bottom: 5px
+          font-size: 24px
+          font-weight: 300
+          line-height: 1
+          color: $mud-brown
+          width: 100%
+          font-family: 'Anglecia Pro Text'
+          +r(767)
+            font-size: 18px
+          &::placeholder
+            color: #d6c18f
+        span
+          text-align: center
+          display: block
+          font-family: 'SF Pro Display'
+          font-size: 12px
+          margin-top: 5px
+          color: $sand
+  &__info
+    margin-top: 60px
+    a
+      font-size: 20px
+      font-weight: 300
+      line-height: 1.5
+      text-align: center
+      color: $dark-sky-blue
+      +center
+      margin-bottom: 10px
+      +r(767)
+        font-size: 16px
+  .swiper-pop-rooms-2
+    box-shadow: 0 10px 20px 0 rgba(66, 42, 25, 0.15)
+    height: 450px
+    margin-top: 50px
+    .swiper-slide__block
+      width: 100%
+      height: 100%
+      background: rgba($mud-brown, 0.7)
+      +center-column
+      h2
+        font-family: 'Anglecia Pro Title'
+        font-size: 60px
+        font-weight: 500
+        text-align: center
+        color: $white
+        +r(767)
+          font-size: 24px
+      p
+        font-size: 24px
+        font-weight: 300
+        line-height: 1.25
+        text-align: center
+        color: $white
+        padding: 20px 70px
+        padding-bottom: 50px
+        +r(767)
+          font-size: 18px
+          padding-left: 0
+          padding-right: 0
+  .swiper-slide
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+  .swiper-button-next, .swiper-button-prev
+    +r(1024)
+      display: block
+    +r(767)
+      display: none
+  .swiper-pagination
+    +center
+    bottom: 15px
+    &-bullet
+      width: 10px
+      height: 10px
+      background: $white
+      opacity: 1
+      border: none
+      &-active
+        background: none
+        width: 12px
+        height: 12px
+        border: 2px solid $white
