@@ -67,8 +67,10 @@
     "lodash": "^4.3.0"
   },
   "dependencies": {
+    "gsap": "^2.0.1",
     "jquery-modal": "^0.9.1",
     "rangeslider.js": "^2.3.2",
+    "scrollmagic": "^2.0.5",
     "swiper": "^4.3.3"
   }
 }

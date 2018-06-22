@@ -1,5 +1,9 @@
 import range from 'rangeslider.js';
 import '../lib/maskedinput.js';
+import ScrollMagic from 'scrollmagic';
+import TweenMax from 'gsap';
+import 'animation.gsap';
+import 'debug.addIndicators';
 
 
 //select
@@ -41,3 +45,17 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
     $(this).closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   }
 });
+
+
+var controller = new ScrollMagic.Controller();
+var scene = new ScrollMagic.Scene({triggerElement: '#water-triger', duration: 2000})
+  .setPin('#water')
+  .setTween(TweenMax.to('#water', 1, { top: '-900px' }))
+  .addTo(controller);
+
+
+var controller1 = new ScrollMagic.Controller();
+var scene1 = new ScrollMagic.Scene({triggerElement: '#clay-triger', duration: 2000})
+  .setPin('#clay')
+  .setTween(TweenMax.to('#clay', 1, { top: '-900px' }))
+  .addTo(controller1);

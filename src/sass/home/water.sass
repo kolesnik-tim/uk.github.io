@@ -3,6 +3,8 @@
   overflow: hidden
   position: relative
   padding: 50px 0
+  .container
+    position: relative
   .heading
     margin-bottom: 60px
     align-items: flex-start
@@ -59,13 +61,15 @@
   &__img
     img
       width: 490px
+      position: relative
+      top: 800px
     +r(767)
       display: none
   &__video
     +center-column
-    position: relative
-    top: -80px
-    right: -70px
+    position: absolute
+    bottom: 0px
+    right: 50px
     +r(767)
       display: none
     img
@@ -89,3 +93,8 @@
     background-position: 74% 100%
     background-size: cover
     transform: rotate(180deg)
+.clay__video
+  top: auto !important
+  left: 50px
+  bottom: 5px
+  right: auto !important
