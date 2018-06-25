@@ -1,5 +1,7 @@
 .reviews
   padding: 100px 0
+  .container
+    position: relative
   .swiper
     position: relative
     margin-top: 70px
@@ -65,7 +67,15 @@
         top: 50px
       i
         color: $sandy
-    .swiper-button-prev
-      left: 15px
     .swiper-button-next
-      right: 30px
+      right: -100px
+      +r(1180)
+        right: 13px
+        i
+          font-size: 40px
+    .swiper-button-prev
+      left: -100px
+      +r(1180)
+        left: 0px
+        i
+          font-size: 40px

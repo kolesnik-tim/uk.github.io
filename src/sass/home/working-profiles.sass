@@ -40,17 +40,31 @@
       +center
   &__block
     margin-top: 70px
+    display: block
     +r(767)
       width: 180px
       +center-column
     &:hover
-      img
+      .working-profiles__block__img
+        &:before
+          opacity: 1
+    &__img
+      position: relative
+      +center
+      margin-bottom: 20px
+      &:before
+        content: ''
+        width: 160px
+        height: 160px
         background: #F6EFE5
+        position: absolute
+        top: -10px
+        border-radius: 100%
+        z-index: -1
+        opacity: 0
+        transition: all 0.3s
     img
       height: 140px
-      border-radius: 50%
-      padding: 10px
-      transition: all 0.3s
     p
       font-family: 'SF Pro Display'
       font-size: 16px

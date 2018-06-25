@@ -7,7 +7,7 @@
     &:before
       position: absolute
       right: -30px
-      content: '\EA08'
+      content: '\EA0B'
       top: 4px
       font-family: 'iconfont'
       font-size: 18px
@@ -17,6 +17,11 @@
         display: block
     .tabs__nav
       overflow-y: hidden
+      &::-webkit-scrollbar-thumb
+        border-radius: 3px
+        background-color: $sand
+      &::-webkit-scrollbar
+        height: 6px
     &__caption
       +center
       border-bottom: 1px solid $beige
@@ -122,6 +127,9 @@
             margin: 50px 0 30px
             +r(767)
                 font-size: 24px
+          ul
+            +r(767)
+              margin-left: 20px
           li
             position: relative
             &:before
@@ -133,6 +141,8 @@
               height: 10px
               background: $sand
               border-radius: 50%
+              +r(767)
+                left: -20px
           .tags
             margin: 45px 0
             ul

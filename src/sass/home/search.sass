@@ -1,5 +1,7 @@
 .search
   padding: 100px 0
+  .container
+    position: relative
   .form
     margin-top: 50px
     margin-bottom: 100px
@@ -100,5 +102,19 @@
         +r(767)
           font-size: 14px
     .swiper-button-next, .swiper-button-prev
+      +r(1024)
+        display: block
       i
         color: $sandy
+    .swiper-button-next
+      right: -100px
+      +r(1180)
+        right: 13px
+        i
+          font-size: 40px
+    .swiper-button-prev
+      left: -100px
+      +r(1180)
+        left: 0px
+        i
+          font-size: 40px

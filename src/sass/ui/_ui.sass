@@ -20,6 +20,15 @@ body.no-scroll
   box-sizing: border-box
   +r(1024)
     padding: 0 15px
+.container-two
+  width: 100% !important
+  max-width: 1170px
+  box-sizing: border-box
+  margin: 0 auto
+  padding-right: 2rem
+  padding-left: 2rem
+  +r(1024)
+    padding: 0 15px
 a
   text-decoration: none
   transition: all 0.3s
@@ -74,7 +83,7 @@ a
     background-position: 50% 0
     position: absolute
     left: 50%
-    top: 48%
+    top: 44.3%
     width: 140%
     transform: translate(-50%, -50%) rotate(90deg)
     +r(767)
@@ -151,3 +160,24 @@ a
       top: -3px
   input:checked + label:before
     color: $sand
+
+
+
+.selectize-input
+  background: none
+  border: none
+  box-shadow: none
+.selectize-dropdown
+  border: 1px solid $sandy
+  border-top: none
+.selectize-input>*
+  font-family: 'Anglecia Pro Text'
+  font-size: 24px
+  color: $mud-brown
+.selectize-dropdown [data-selectable]
+  font-family: 'Anglecia Pro Text'
+  font-size: 24px
+  color: $mud-brown
+.selectize-dropdown .active
+  background: $sandy
+  color: $mud-brown
