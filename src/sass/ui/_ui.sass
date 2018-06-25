@@ -167,17 +167,27 @@ a
   background: none
   border: none
   box-shadow: none
+  border-bottom: 2px solid $sandy
+  padding: 0
+  padding-bottom: 3px
+  transition: all 0.3s
+  border-radius: 0
+  &:after
+    transition: all 0.3s
+  &.input-active
+    box-shadow: none
+  input
+    display: none !important
 .selectize-dropdown
   border: 1px solid $sandy
   border-top: none
-.selectize-input>*
-  font-family: 'Anglecia Pro Text'
+.selectize-input>*, .selectize-dropdown [data-selectable]
   font-size: 24px
-  color: $mud-brown
-.selectize-dropdown [data-selectable]
-  font-family: 'Anglecia Pro Text'
-  font-size: 24px
-  color: $mud-brown
+  font-weight: 300
+  line-height: 1.25
+  color: $mud
+  +r(767)
+    font-size: 18px
 .selectize-dropdown .active
   background: $sandy
   color: $mud-brown
