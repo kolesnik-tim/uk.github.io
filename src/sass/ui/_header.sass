@@ -143,6 +143,19 @@
       ul
         +center-y
         justify-content: space-between
+      li
+        position: relative
+        &:before
+          content: ''
+          position: absolute
+          bottom: 0
+          width: 0px
+          height: 2px
+          transition: all 0.3s
+          background: $white
+        &:hover
+          &:before
+            width: 100%
         a
           font-family: 'Anglecia Pro Title'
           font-size: 16px
@@ -152,6 +165,7 @@
           color: $white
           font-size: 15px
           padding-left: 10px
+          padding-right: 18px
     a.phone
       width: 180px
       text-align: right
@@ -166,5 +180,8 @@
           display: none
         a
           display: block
+          &:hover
+            &:hover
+              color: darken($mud-brown, 20%)
 
     

@@ -122,7 +122,8 @@ a
     margin-top: 10px
     margin-bottom: 70px
     text-align: center
-
+    &:hover
+      color: darken($dark-sky-blue, 20%)
 .checkbox
   input
     display: none
@@ -138,6 +139,8 @@ a
       font-size: 16px
     a
       color: $dark-sky-blue
+      &:hover
+        color: darken($dark-sky-blue, 20%)
   input + label:before
     content: '\EA03'
     width: 30px
@@ -191,3 +194,41 @@ a
 .selectize-dropdown .active
   background: $sandy
   color: $mud-brown
+
+.form
+  &__input
+    position: relative
+    margin-right: 35px
+    border-bottom: 2px solid $sandy
+    &.active
+      label
+        font-size: 12px
+        top: 40px
+    input
+      font-size: 24px
+      font-weight: 300
+      line-height: 1.25
+      text-align: center
+      color: $mud-brown
+      width: 100%
+      background: none
+      padding-bottom: 5px
+      font-family: 'Anglecia Pro Text'
+      +r(767)
+        margin-right: 0
+        margin-bottom: 30px
+        font-size: 18px
+        width: 300px
+    label
+      text-align: center
+      display: block
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translate(-50%)
+      font-size: 24px
+      font-weight: 300
+      line-height: 1.25
+      transition: all 0.3s
+      color: $sand
+      width: 100%

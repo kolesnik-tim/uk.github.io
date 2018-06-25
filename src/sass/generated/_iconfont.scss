@@ -12,18 +12,19 @@
 $icon-button-inline: "\EA01";
 $icon-button: "\EA02";
 $icon-combined-shape: "\EA03";
-$icon-fb: "\EA04";
-$icon-instagram: "\EA05";
-$icon-left-arrow: "\EA06";
-$icon-logo-author: "\EA07";
-$icon-ok: "\EA08";
-$icon-person: "\EA09";
-$icon-play: "\EA0A";
-$icon-right-arrow: "\EA0B";
-$icon-ring: "\EA0C";
-$icon-search: "\EA0D";
-$icon-vk: "\EA0E";
-$icon-yt: "\EA0F";
+$icon-doc: "\EA04";
+$icon-fb: "\EA05";
+$icon-instagram: "\EA06";
+$icon-left-arrow: "\EA07";
+$icon-logo-author: "\EA08";
+$icon-ok: "\EA09";
+$icon-person: "\EA0A";
+$icon-play: "\EA0B";
+$icon-right-arrow: "\EA0C";
+$icon-ring: "\EA0D";
+$icon-search: "\EA0E";
+$icon-vk: "\EA0F";
+$icon-yt: "\EA10";
 
 
 %icon {
@@ -45,6 +46,7 @@ $icon-yt: "\EA0F";
 .icon-button-inline:before { content: $icon-button-inline; }
 .icon-button:before { content: $icon-button; }
 .icon-combined-shape:before { content: $icon-combined-shape; }
+.icon-doc:before { content: $icon-doc; }
 .icon-fb:before { content: $icon-fb; }
 .icon-instagram:before { content: $icon-instagram; }
 .icon-left-arrow:before { content: $icon-left-arrow; }

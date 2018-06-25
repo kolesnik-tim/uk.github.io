@@ -4,15 +4,7 @@
   background-repeat: no-repeat
   background-size: cover
   position: relative
-  &:before
-    content: ''
-    width: 100%
-    height: 100%
-    filter: blur(5px)
-    position: absolute
-    top: 0
-    z-index: 99999
-    display: block
+  background-attachment: fixed
   +r(767)
     height: 500px
   &__content
@@ -20,7 +12,6 @@
     height: 100%
     width: 100%
     background-color: rgba(72, 55, 17, 0.6)
-    backdrop-filter: blur(3px)
   h2
     font-family: 'Anglecia Pro Title'
     font-size: 60px

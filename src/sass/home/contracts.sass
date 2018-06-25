@@ -6,13 +6,25 @@
   &__block
     +center-column
     margin-bottom: 20px
+    &:hover
+      .contracts__block__text
+        p
+          color: darken($mud-brown, 20%)
+      .contracts__block__img
+        i
+          color: darken($beige, 20%)
     &__img
       width: 100px
       height: 140px
-      background: url('../img/doc.svg') no-repeat
-      background-size: contain
       +center-column
       margin-bottom: 20px
+      position: relative
+      i
+        position: absolute
+        font-size: 140px
+        top: 0
+        color: $beige
+        transition: all 0.3s
       p
         font-family: 'Anglecia Pro Title'
         font-size: 24px
@@ -35,5 +47,6 @@
         color: $mud-brown
         max-width: 240px
         text-align: center
+        transition: all 0.3s
         +r(767)
           font-size: 18px

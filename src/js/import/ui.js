@@ -6,15 +6,26 @@ import 'animation.gsap';
 import 'debug.addIndicators';
 import '../lib/selectize.min.js';
 
+
+
+
+
+
 $('select').selectize('options');
 
-// //select
-// $('select').each(function() {
-//   $(this).siblings('p').text( $(this).children('option:selected').text() );
-// });
-// $('select').change(function() {
-//   $(this).siblings('p').text( $(this).children('option:selected').text() );
-// });
+//input label
+
+$('.form__input input').focus(function() {
+  $(this).closest('.form__input').addClass('active');
+});
+
+$('.form__input input').focusout(function() {
+  if($(this).val() === '+_ (_ _ _) _ _ _ - _ _ - _ _' || $(this).val() === '') {
+    $(this).closest('.form__input').removeClass('active');
+  } else {
+    $(this).closest('.form__input').addClass('active');
+  }
+});
 
 
 //range
@@ -34,7 +45,7 @@ function day() {
 
 
 //mask input
-$('.phone').mask('+7 (9 9 9) 9 9 9 - 9 9 - 9 9');
+$('.phone').mask('+9 (9 9 9) 9 9 9 - 9 9 - 9 9');
 
 
 //tabs
@@ -48,7 +59,7 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
   }
 });
 
-
+//parallax
 var controller = new ScrollMagic.Controller();
 var scene = new ScrollMagic.Scene({triggerElement: '#water-triger', duration: 2200})
   .setPin('#water')

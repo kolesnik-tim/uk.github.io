@@ -7,7 +7,7 @@ section.reply
           p Если у Вас остались вопросы — смело звоните нам по бесплатному номеру <a href="tel:88007074105">8 (800) 707-41-05</a> или оставьте номер телефона и мы Вам перезвоним. 
       .col-xs-12
         form(action="").form
-          .form__phone
-            input(type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _").phone
-            span Номер телефона
+          .form__input
+            input(type="tel" id="tel").phone
+            label(for="tel") Номер телефона
           +btn-sandy('Позвоните мне')(class="btn-sandy")

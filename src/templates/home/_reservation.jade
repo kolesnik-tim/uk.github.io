@@ -7,9 +7,10 @@ section.reservation
           p Оставьте ваши контактные данные, чтобы мы могли связаться с Вами и уточнить все необходимые данные.
     form(action="").form
       .form__content
-        .form__block
-          input(type="text" placeholder="Как к Вам обращаться?")
-        .form__block.form__block-tel
-          input(type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _").phone
-          span Номер телефона
+        .form__input
+          input(type="text" id="text")
+          label(for="text") Ваше имя
+        .form__input
+          input(type="tel" id="tel-2").phone
+          label(for="tel-2") Номер телефона
       +btn-sandy('Забронировать')(class="btn-sandy")

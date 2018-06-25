@@ -1,97 +1,98 @@
 .menu
   .menu__content
-    .menu-close
-      span
-    .menu__block.menu__block__tel
-      a(href="tel:88007074105") 8 (800) 707-41-05
-    .menu__block
-      h4 
-        a(href="#") О курорте
-        i.icon.icon-left-arrow
-      ul
-        li
-          a(href="#") История
-        li
-          a(href="#") Руководство
-        li
-          a(href="#") Полезная информация
-        li
-          a(href="#") Фотогалерея
-        li
-          a(href="#") Награды
-        li
-          a(href="#") Отзывы
-        li
-          a(href="#") Молочный Цех
-        li
-          a(href="#") Участки ИЖС
-    .menu__block
-      h4
-        a(href="#") Санатории
-        i.icon.icon-left-arrow
-      ul
-        li
-          a(href="#") Имени Ленина
-        li
-          a(href="#") Дубки
-        li
-          a(href="#") Прибрежный
-        li
-          a(href="#") Белый Яр
-      h4 
-        a(href="#") Базы отдыха
-        i.icon.icon-left-arrow
-      ul
-        li
-          a(href="#") Кепинг «Чайка»
-        li
-          a(href="#") Прибрежный
-        li
-          a(href="#") Белый Яр
-        li
-          a(href="#") Слава Черноморья
-        li
-          a(href="#") Лагерь «Сосенка»
-    .menu__block
-      h4 
-        a(href="#") Лечение
-        i.icon.icon-left-arrow
-      ul
-        li
-          a(href="#") Профили 
-        li
-          a(href="#") Методики
-        li
-          a(href="#") Особенности
-      h4 
-        a(href="#") Досуг
-        i.icon.icon-left-arrow
-      ul
-        li
-          a(href="#") Анимация
-        li
-          a(href="#") Экскурсии
-        li
-          a(href="#") Конюшня
-        li
-          a(href="#") Рыбалка
-        li
-          a(href="#" ) Горные лыжи
-    .menu__block
-      h4
-        a(href="#") Контакты
-      h4
-        a(href="#") Цены
-      h4
-        a(href="#") Блог
-        i.icon.icon-left-arrow
-      ul
-        li
-          a(href="#") Акции
-        li
-          a(href="#") Новости
-        li
-          a(href="#") Статьи
+    .menu__content__block
+      .menu-close
+        span
+      .menu__block.menu__block__tel
+        a(href="tel:88007074105") 8 (800) 707-41-05
+      .menu__block
+        h4 
+          a(href="#") О курорте
+          i.icon.icon-left-arrow
+        ul
+          li
+            a(href="#") История
+          li
+            a(href="#") Руководство
+          li
+            a(href="#") Полезная информация
+          li
+            a(href="#") Фотогалерея
+          li
+            a(href="#") Награды
+          li
+            a(href="#") Отзывы
+          li
+            a(href="#") Молочный Цех
+          li
+            a(href="#") Участки ИЖС
+      .menu__block
+        h4
+          a(href="#") Санатории
+          i.icon.icon-left-arrow
+        ul
+          li
+            a(href="#") Имени Ленина
+          li
+            a(href="#") Дубки
+          li
+            a(href="#") Прибрежный
+          li
+            a(href="#") Белый Яр
+        h4 
+          a(href="#") Базы отдыха
+          i.icon.icon-left-arrow
+        ul
+          li
+            a(href="#") Кепинг «Чайка»
+          li
+            a(href="#") Прибрежный
+          li
+            a(href="#") Белый Яр
+          li
+            a(href="#") Слава Черноморья
+          li
+            a(href="#") Лагерь «Сосенка»
+      .menu__block
+        h4 
+          a(href="#") Лечение
+          i.icon.icon-left-arrow
+        ul
+          li
+            a(href="#") Профили 
+          li
+            a(href="#") Методики
+          li
+            a(href="#") Особенности
+        h4 
+          a(href="#") Досуг
+          i.icon.icon-left-arrow
+        ul
+          li
+            a(href="#") Анимация
+          li
+            a(href="#") Экскурсии
+          li
+            a(href="#") Конюшня
+          li
+            a(href="#") Рыбалка
+          li
+            a(href="#" ) Горные лыжи
+      .menu__block
+        h4
+          a(href="#") Контакты
+        h4
+          a(href="#") Цены
+        h4
+          a(href="#") Блог
+          i.icon.icon-left-arrow
+        ul
+          li
+            a(href="#") Акции
+          li
+            a(href="#") Новости
+          li
+            a(href="#") Статьи
     .menu__search
       input(type="text" placeholder="Поиск по сайту")
       i.icon.icon-search
@@ -149,10 +150,11 @@
       form(action="").form
         .form__block
           .form__input
-            input(type="text" placeholder="Как к Вам обращаться?")
+            input(type="text" id="text-5")
+            label(for="text-5") Как к Вам обращаться?
           .form__input
-            input(type="email" placeholder="E-mail")
-            span Адрес e-mail
+            input(type="email" id="email")
+            label(for="email") Адрес e-mail
         .form__social
           span Поделитесь этим с друзьями:
           .form__social__block
@@ -178,10 +180,11 @@
       form(action="").form
         .form__block
           .form__input
-            input(type="text" placeholder="Как к Вам обращаться?")
+            input(type="text" id="text-6")
+            label(for="text-6") Как к Вам обращаться?
           .form__input
-            input(type="email" placeholder="E-mail")
-            span Адрес e-mail
+            input(type="email" id="email-2")
+            label(for="email-2") Адрес e-mail
         textarea(placeholder="Ваш вопрос")
         +btn-sandy('Отправить', '#', 'data-pop')(class="btn-sandy")
         .form__checkbox.checkbox
@@ -201,13 +204,14 @@
       form(action="").form
         .form__block
           .form__input
-            input(type="text" placeholder="Как к Вам обращаться?")
+            input(type="text" id="text-7")
+            label(for="text-7") Как к Вам обращаться?
           .form__input
-            input(type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _").phone
-            span Номер телефона
+            input(type="tel" id="tel-4").phone
+            label(for="tel-4") Номер телефона
           .form__input
-            input(type="email" placeholder="E-mail")
-            span Адрес e-mail
+            input(type="email" id="email-3")
+            label(for="email-3") Адрес e-mail
         +btn-sandy('Отправить', '#', 'data-pop')(class="btn-sandy")
         .form__checkbox.checkbox
           input(type="checkbox" id='checkbox-1')
@@ -263,13 +267,14 @@
         p Наши менеджеры свяжутся с вами через несколько минут для уточнения даты и условий пребывания в санатории.
         form(action="").form
           .form__input
-            input(type="text" placeholder="Ваше имя")
+            input(type="text" id="text-8")
+            label(for="text-8") Ваше имя
           .form__input
-            input(type="tel" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _").phone
-            span Номер телефона
+            input(type="tel" id="tel-5").phone
+            label(for="tel-5") Номер телефона
           .form__input
-            input(type="email" placeholder="E-mail")
-            span Адрес e-mail
+            input(type="email" id="email-5")
+            label(for="email-5") Адрес e-mail
           +btn-sandy('Отправить', '#', 'data-pop')(class="btn-sandy")
           .form__checkbox.checkbox
             input(type="checkbox" id='checkbox-1')
