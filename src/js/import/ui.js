@@ -7,7 +7,7 @@ import 'debug.addIndicators';
 import '../lib/selectize.min.js';
 
 
-
+$('.healthy-children, .healthy-children__content').css('polyfilter','blur(3px)');
 
 
 
