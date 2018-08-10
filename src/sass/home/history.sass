@@ -34,26 +34,6 @@
     &-1
       top: 0
     &-2
-      top: 210px
-      &:before
-        content: ''
-        position: absolute
-        width: 120px
-        border-bottom: 4px dotted $beige
-        right: -130px
-        top: 19px
-    &-3
-      top: 420px
-    &-4
-      bottom: 230px
-      &:before
-        content: ''
-        position: absolute
-        width: 100px
-        border-bottom: 4px dotted $beige
-        left: -110px
-        top: 19px
-    &-5
       bottom: 0
   h4
     font-family: 'Anglecia Pro Title'
@@ -85,8 +65,37 @@
     +center-relative-x
     border: 2px solid beige
     margin-top: 175px
+    position: relative
     +r(767)
       margin-top: 35px
+    &__decor
+      position: relative
+      +r(767)
+        display: none
+      &:before
+        content: ''
+        position: absolute
+        right: -88px
+        bottom: 112px
+        width: 30px
+        height: 30px
+        background: $beige
+        border-radius: 100%
+      &:after
+        content: ''
+        position: absolute
+        width: 90px
+        border-bottom: 4px dotted $beige
+        right: -50px
+        bottom: 123px
+      &-secondary
+        &:before, &:after
+          right: auto
+        &:before
+          left: -113px
+        &:after
+          left: -70px
+          width: 110px
     &-primary
       margin-top: 75px
     img

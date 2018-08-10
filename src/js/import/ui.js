@@ -72,3 +72,13 @@ var scene1 = new ScrollMagic.Scene({triggerElement: '#clay-triger', duration: 22
   .setPin('#clay')
   .setTween(TweenMax.to('#clay', 1, { top: '-900px' }))
   .addTo(controller1);
+
+
+//scroll
+ 
+$('.scroll').on('click','a', function(event) {
+  event.preventDefault();
+  var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 1500);
+});

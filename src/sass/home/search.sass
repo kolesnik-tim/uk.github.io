@@ -81,13 +81,15 @@
           font-size: 14px
     .swiper-button-next, .swiper-button-prev
       +r(1024)
-        display: block
+        display: flex
       i
         color: $sandy
     .swiper-button-next
       right: -100px
       +r(1180)
-        right: 13px
+        right: 0
+        display: flex
+        justify-content: flex-end
         i
           font-size: 40px
     .swiper-button-prev

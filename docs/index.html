@@ -32,13 +32,13 @@
         <div class="header__top">
           <div class="menu-open"><span></span></div>
           <nav>
-            <ul>
+            <ul class="scroll">
               <li><a href="#step" data-pop>Лечение</a></li>
               <li><a href="#pop-question" data-pop>Санатории</a></li>
               <li><a href="#pop-application" data-pop>Уникальность</a></li>
               <li><a href="#pop-gallery" data-pop>Досуг</a></li>
               <li><a href="#pop-rooms" data-pop>Дома отдыха</a></li>
-              <li><a href="#">Цены</a></li>
+              <li><a href="#room">Цены</a></li>
               <li><a href="#">Забронировать</a><i class="icon icon-ring"></i></li>
             </ul>
           </nav><a href="tel:88007074105" class="phone-white">8 (800) 707-41-05</a></div>
@@ -157,7 +157,7 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <div class="video__block"><img src="img/video.png" alt=""><a href="#"> <i class="icon icon-play"></i><div class="video__block__text"><span>Посмотрите видео</span><p>Уникальность курортов Ульяновской области</p></div></a></div>
+              <div class="video__block"><img src="img/video.png" alt=""><a href="#video" data-pop> <i class="icon icon-play"></i><div class="video__block__text"><span>Посмотрите видео</span><p>Уникальность курортов Ульяновской области</p></div></a></div>
             </div>
           </div>
         </div>
@@ -1000,7 +1000,7 @@
     <section class="history">
       <div class="container">
         <div class="history__content">
-          <div class="history__decor"><i class="history__decor-1"></i><i class="history__decor-2"></i><i class="history__decor-3"></i><i class="history__decor-4"></i><i class="history__decor-5"></i></div>
+          <div class="history__decor"><i class="history__decor-1"></i><i class="history__decor-2"></i></div>
           <div class="row">
             <div class="col-sm-5 col-xs-12 first-sm">
               <h4 class="history__text-primary">130-150 млн лет назад</h4>
@@ -1008,11 +1008,33 @@
             </div>
             <div class="col-sm-5 col-xs-12 col-sm-offset-2 center-xs first-xs">
               <div class="history__img history__img-primary"><img src="img/history/history-1.png" srcset="img/history/history-1@2x.png 2x, img/history/history-1@3x.png 3x"></div>
+              <div class="history__img__decor history__img__decor-secondary"></div>
             </div>
           </div>
           <div class="row">
             <div class="col-sm-5 col-xs-12 center-xs">
               <div class="history__img"><img src="img/history/history-2.png" srcset="img/history/history-2@2x.png 2x, img/history/history-2@3x.png 3x"></div>
+              <div class="history__img__decor"></div>
+            </div>
+            <div class="col-sm-5 col-xs-12 col-sm-offset-2">
+              <h4>Древние племена</h4>
+              <p>Тюрские народы заселяют территорию ульяновской области. Они называют эту территорию «Ун Дару» — десять лекарств, десять целебных факторов и средств.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5 col-xs-12 first-sm">
+              <h4 class="history__text-primary">130-150 млн лет назад</h4>
+              <p>На территории Ундор были мелководные моря. Останки их обитателей со временем сформировали благоприятную минералогическую основу для курорнной зоны.</p>
+            </div>
+            <div class="col-sm-5 col-xs-12 col-sm-offset-2 center-xs first-xs">
+              <div class="history__img history__img-primary"><img src="img/history/history-1.png" srcset="img/history/history-1@2x.png 2x, img/history/history-1@3x.png 3x"></div>
+              <div class="history__img__decor history__img__decor-secondary"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-5 col-xs-12 center-xs">
+              <div class="history__img"><img src="img/history/history-2.png" srcset="img/history/history-2@2x.png 2x, img/history/history-2@3x.png 3x"></div>
+              <div class="history__img__decor"></div>
             </div>
             <div class="col-sm-5 col-xs-12 col-sm-offset-2">
               <h4>Древние племена</h4>
@@ -1044,7 +1066,7 @@
         </div>
       </div>
     </section>
-    <section class="room">
+    <section id="room" class="room">
       <div class="container">
         <div class="room__conditions">
           <div class="row middle-xs center-xs">
@@ -1608,6 +1630,8 @@
       </div>
     </div>
     </div>
+    <div id="video" class="video-pop-up modal">
+      <div class="modal__close"><span></span></div><iframe src="https://www.youtube.com/embed/XFCg9Ojvqu0?ecver=2" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
     <footer class="footer">
       <div class="container">
         <div class="row">

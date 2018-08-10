@@ -62,7 +62,7 @@
             text-align: center
     .swiper-button-next, .swiper-button-prev
       +r(1024)
-        display: block
+        display: flex
       +r(767)
         top: 50px
       i
@@ -70,12 +70,17 @@
     .swiper-button-next
       right: -100px
       +r(1180)
-        right: 13px
+        right: -50px
+        justify-content: flex-end
         i
           font-size: 40px
+      +r(767)
+        right: 0
     .swiper-button-prev
       left: -100px
       +r(1180)
-        left: 0px
+        left: -50px
         i
           font-size: 40px
+      +r(767)
+        left: 0
