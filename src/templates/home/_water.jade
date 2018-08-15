@@ -1,4 +1,4 @@
-section.water
+section.left-block
   .container
     .row
       .col-sm-8.col-xs-12
@@ -7,19 +7,19 @@ section.water
           p Единственные в России по своему минеральному составу источники лечебной минеральной воды. По своему составу похоже на Карловы Вары в Чехии. 
         .row
           .col-sm-6.col-xs-12
-            .water__block
+            .left-block__block
               img(src="img/medical-profiles/jeludok.svg")
               p Гастроэнтерологические заболевания
-          .col-sm-6.col-xs-12#clay-triger
-            .water__block
+          .col-sm-6.col-xs-12
+            .left-block__block
               img(src="img/medical-profiles/serdce.svg")
               p Заболевания сердечно-сосудистой системы
           .col-sm-6.col-xs-12
-            .water__block
+            .left-block__block
               img(src="img/medical-profiles/skelet.svg")
               p Болезни опорно-двигательного аппарата
           .col-sm-6.col-xs-12
-            .water__block
+            .left-block__block
               img(src="img/medical-profiles/pochki.svg")
               p Урологические заболевания, мочекаменная болезнь
         +btn-sandy('Оздоровиться')(class="btn-sandy") Оздоровиться
@@ -31,8 +31,10 @@ section.water
           li
             a(href="#") Врачи и методики
       .col-sm-4
-        .water__img
-          img(src="img/glass.png", alt="")#water
-        a(href="#").water__video
+        .left-block__img
+          .scene-1.scene-secondary(data-invert-x="false" data-invert-y="false")
+            div(data-depth="0.5")
+              img(src="img/glass.png", alt="")
+        a(href="#").left-block__video
           img(src="http://via.placeholder.com/70x40", alt="")
           span Посмотрите видео

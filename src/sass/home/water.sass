@@ -1,4 +1,4 @@
-.water, .clay
+.left-block, .right-block
   background: $very-light-pink
   overflow: hidden
   position: relative
@@ -64,7 +64,6 @@
     img
       width: 490px
       position: relative
-      top: 500px
     +r(767)
       display: none
   &__video
@@ -84,7 +83,7 @@
     &:hover
       span
         color: darken($dark-sky-blue, 20%)
-.water
+.left-block
   padding-top: 160px
   padding-bottom: 120px
   +r(767)
@@ -99,8 +98,8 @@
     background-position: 74% 100%
     background-size: cover
     transform: rotate(180deg)
-.clay__video
+.right-block__video
   top: auto !important
   left: 50px
-  bottom: 5px
+  bottom: 15px
   right: auto !important

@@ -72,7 +72,12 @@ var swiper2 = new Swiper('.swiper-pop-rooms-2', {
   },
 });
 
-
+$('[data-pop]').on('click', function() {
+  setTimeout(function() {
+    swiper1.update();
+    swiper2.update();
+  }, 500);
+});
 //pop-up
 $('[data-pop]').on('click', function() {
   let id = $(this).attr('href');

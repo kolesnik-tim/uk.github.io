@@ -1,11 +1,13 @@
-.bg-line.bg-line--clay
-section.clay
+.bg-line.bg-line--right-block
+section.right-block
   .container
     .row
       .col-sm-4
-        .clay__img
-          img(src="img/rock.png", alt="")#clay
-        a(href="#").clay__video
+        .right-block__img
+          .scene-2.scene-secondary(data-invert-x="false" data-invert-y="false")
+            div(data-depth="0.5")
+              img(src="img/rock.png", alt="")
+        a(href="#").right-block__video
           img(src="http://via.placeholder.com/70x40", alt="")
           span Посмотрите видео
       .col-sm-8.col-xs-12
@@ -14,19 +16,19 @@ section.clay
           p Единственные в России по своему минеральному составу источники лечебной минеральной воды. По своему составу похоже на Карловы Вары в Чехии. 
         .row
           .col-sm-6.col-xs-12
-            .clay__block
+            .right-block__block
               img(src="img/medical-profiles/endocrinolog.svg")
               p Заболевания нервных систем
           .col-sm-6.col-xs-12
-            .clay__block
+            .right-block__block
               img(src="img/medical-profiles/koja.svg")
               p Заболевания кожи, аллергозы, псориаз
           .col-sm-6.col-xs-12
-            .clay__block
+            .right-block__block
               img(src="img/medical-profiles/legkie.svg")
               p Болезни органов дыхания
           .col-sm-6.col-xs-12
-            .clay__block
+            .right-block__block
               img(src="img/medical-profiles/serdce.svg")
               p Заболевания сердечно-сосудистой системы
         +btn-sandy('Обмазаться глиной')(class="btn-sandy") Обмазаться глиной

@@ -1,10 +1,17 @@
 import range from 'rangeslider.js';
 import '../lib/maskedinput.js';
-import ScrollMagic from 'scrollmagic';
 import TweenMax from 'gsap';
 import 'animation.gsap';
 import 'debug.addIndicators';
 import '../lib/selectize.min.js';
+import objectFitImages from 'object-fit-images';
+
+
+
+
+objectFitImages();
+// var elements = $('.aside');
+// const sticky = new Stickyfill.Sticky(element);
 
 
 $('.healthy-children, .healthy-children__content').css('polyfilter','blur(3px)');
@@ -55,25 +62,14 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
     .addClass('active').siblings().removeClass('active')
     .closest('div.tabs').children('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   if($(this).closest('.tabs__nav')) {
-    $(this).closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    $(this).closest('div.tabs').children('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
   }
 });
 
 //parallax
-var controller = new ScrollMagic.Controller();
-var scene = new ScrollMagic.Scene({triggerElement: '#water-triger', duration: 2200})
-  .setPin('#water')
-  .setTween(TweenMax.to('#water', 1, { top: '-900px' }))
-  .addTo(controller);
-
-
-var controller1 = new ScrollMagic.Controller();
-var scene1 = new ScrollMagic.Scene({triggerElement: '#clay-triger', duration: 2200})
-  .setPin('#clay')
-  .setTween(TweenMax.to('#clay', 1, { top: '-900px' }))
-  .addTo(controller1);
-
-
+if($('div').is('#water-triger')) {
+  
+}
 //scroll
  
 $('.scroll').on('click','a', function(event) {
@@ -81,4 +77,28 @@ $('.scroll').on('click','a', function(event) {
   var id  = $(this).attr('href'),
     top = $(id).offset().top;
   $('body,html').animate({scrollTop: top}, 1500);
+});
+
+
+
+$(window).on('scroll', function() {
+  if($('html, body').scrollTop() >= 150) {
+    $('.header').addClass('fixed');
+    $('.header__scroll').css({'transform' : 'translateY(0%)'});
+  } else {
+    $('.header').removeClass('fixed');
+    $('.header__scroll').css({'transform' : 'translateY(-200%)'});
+  }
+});
+
+
+$('.all-tags').on('click', function(event) {
+  event.preventDefault();
+  if($(this).hasClass('active')) {
+    $('.tags ul').css({'max-height' : '100px'});
+    $(this).removeClass('active');
+  } else {
+    $('.tags ul').css({'max-height' : '400px'});
+    $(this).addClass('active');
+  }
 });
