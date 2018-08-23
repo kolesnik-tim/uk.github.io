@@ -35,6 +35,8 @@ if($(window).width() < 767) {
 //pop-gallery
 var swiper = new Swiper('.swiper-pop-gallery', {
   slidesPerView: 1,
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '.swiper-pop-gallery-next',
     prevEl: '.swiper-pop-gallery-prev',
@@ -48,6 +50,8 @@ var swiper = new Swiper('.swiper-pop-gallery', {
 //pop-rooms-1
 var swiper1 = new Swiper('.swiper-pop-rooms-1', {
   slidesPerView: 1,
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '.swiper-pop-rooms-1-next',
     prevEl: '.swiper-pop-rooms-1-prev',
@@ -62,6 +66,8 @@ var swiper1 = new Swiper('.swiper-pop-rooms-1', {
 //pop-rooms-2
 var swiper2 = new Swiper('.swiper-pop-rooms-2', {
   slidesPerView: 1,
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '.swiper-pop-rooms-2-next',
     prevEl: '.swiper-pop-rooms-2-prev',
@@ -74,8 +80,6 @@ var swiper2 = new Swiper('.swiper-pop-rooms-2', {
 
 $('[data-pop]').on('click', function() {
   setTimeout(function() {
-    swiper1.update();
-    swiper2.update();
   }, 500);
 });
 //pop-up
@@ -83,9 +87,6 @@ $('[data-pop]').on('click', function() {
   let id = $(this).attr('href');
   $(id).fadeIn();
   $('body').addClass('no-scroll');
-  swiper.update();
-  swiper1.update();
-  swiper2.update();
 });
 
 $('.modal__close, .next').on('click', function() {

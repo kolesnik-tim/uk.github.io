@@ -3,6 +3,8 @@ import Swiper from 'swiper';
 //intro
 var swiper = new Swiper('.swiper-intro', {
   slidesPerView: 1,
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '.swiper-intro-next',
     prevEl: '.swiper-intro-prev',
@@ -17,6 +19,8 @@ var swiper = new Swiper('.swiper-intro', {
 
 var swiper = new Swiper('.swiper-working-profiles', {
   slidesPerView: 2,
+  observer: true,
+  observeParents: true,
   loop: true,
   centeredSlides: true,
   breakpoints: {
@@ -32,6 +36,8 @@ var swiper = new Swiper('.swiper-working-profiles', {
 var swiper = new Swiper('.swiper-special-offers', {
   slidesPerView: 2,
   spaceBetween: 30,
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '.swiper-special-offers-next',
     prevEl: '.swiper-special-offers-prev',
@@ -48,6 +54,8 @@ var swiper = new Swiper('.swiper-special-offers', {
 
 var swiper = new Swiper('.swiper-gallery', {
   slidesPerView: 1,
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '.swiper-gallery-next',
     prevEl: '.swiper-gallery-prev',
@@ -63,6 +71,8 @@ var swiper = new Swiper('.swiper-gallery', {
 
 var swiper = new Swiper('.swiper-reviews', {
   slidesPerView: 1,
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '.swiper-reviews-next',
     prevEl: '.swiper-reviews-prev',
@@ -73,6 +83,8 @@ var swiper = new Swiper('.swiper-reviews', {
 
 var swiper = new Swiper('.swiper-search', {
   slidesPerView: 3,
+  observer: true,
+  observeParents: true,
   navigation: {
     nextEl: '.swiper-search-next',
     prevEl: '.swiper-search-prev',
