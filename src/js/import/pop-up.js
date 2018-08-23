@@ -26,6 +26,7 @@ if($(window).width() < 767) {
     event.preventDefault();
     $(this).next('ul').slideToggle();
     $(this).toggleClass('active');
+    return false;
   });
 }
 
@@ -78,19 +79,17 @@ var swiper2 = new Swiper('.swiper-pop-rooms-2', {
   },
 });
 
-$('[data-pop]').on('click', function() {
-  setTimeout(function() {
-  }, 500);
-});
 //pop-up
 $('[data-pop]').on('click', function() {
   let id = $(this).attr('href');
   $(id).fadeIn();
   $('body').addClass('no-scroll');
+  return false;
 });
 
 $('.modal__close, .next').on('click', function() {
   $('.modal').fadeOut();
   $('body').removeClass('no-scroll');
+  return false;
 });
 
