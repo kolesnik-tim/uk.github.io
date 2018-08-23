@@ -5,12 +5,14 @@ if($(window).width() < 767) {
     $('body').addClass('no-scroll');
     $('.menu').fadeToggle();
     $('.header__toolbar').addClass('active');
+    return false;
   });
 }
 $('.menu-close').on('click', function() {
   $('.menu').fadeOut();
   $('body').removeClass('no-scroll');
   $('.header__toolbar').removeClass('active');
+  return false;
 });
 
 if($(window).width() > 767) {
@@ -19,6 +21,7 @@ if($(window).width() > 767) {
     $('body').toggleClass('no-scroll');
     $('.menu').fadeToggle();
     $('.header').toggleClass('active');
+    return false;
   });
 }
 if($(window).width() < 767) {
