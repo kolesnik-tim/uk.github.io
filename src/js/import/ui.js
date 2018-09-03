@@ -51,17 +51,29 @@ $('.form__input input').focusout(function() {
 
 //range
 
+$('.selectized').change(function() {
+  let valinput = $('.calculator .form__range input[type="range"]').val();
+  let result = +valinput * +$('.calculator select option:selected').val();
+  $('.form__sum span').text(`от ${result}`);
+});
+
 $('input[type="range"]').rangeslider({
   polyfill: false,
+  onInit: function() {
+    day();
+  },
   onSlide: function() {
     day();
   },
+  
 });
 
 function day() {
   let text = $('.calculator .form__range p');
   let valinput = $('.calculator .form__range input[type="range"]').val();
   $(text).text(valinput + ' дней');
+  let result = +valinput * +$('.calculator select option:selected').val();
+  $('.form__sum span').text(`от ${result}`);
 }
 
 
