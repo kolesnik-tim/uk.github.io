@@ -72,8 +72,8 @@ function day() {
   let text = $('.calculator .form__range p');
   let valinput = $('.calculator .form__range input[type="range"]').val();
   $(text).text(valinput + ' дней');
-  let result = +valinput * +$('.calculator select option:selected').val();
-  $('.form__sum span').text(`от ${result}`);
+  let result = (+valinput * 1000).toFixed(0);
+  $('.form__sum span').text(`от ${result.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ')} ₽`);
 }
 
 
@@ -127,4 +127,28 @@ $('.all-tags').on('click', function(event) {
     $('.tags ul').css({'max-height' : '400px'});
     $(this).addClass('active');
   }
+});
+
+
+
+// Подстановка в отзывы
+$(document).ready(function() {
+  $.ajax({
+    url: '/assets/connectors/getSanator.php',
+    type: 'post',
+    dataType: 'json',
+    success: function(response) {
+      for (var i = 0; i < response.length; i++) {
+        $('select[name=kurort]').append('<option value="'+response[i]+'">'+response[i]+'</option>');
+        $('select[name=kurort]').selectize();
+      }
+    }
+  });
+});
+
+
+
+//form
+$(document).on('submit', '.ajax_form', function(event) {
+  
 });
