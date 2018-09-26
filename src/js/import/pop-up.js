@@ -21,6 +21,7 @@ if($(window).width() > 767) {
     $('body').toggleClass('no-scroll');
     $('.menu').fadeToggle();
     $('.header').toggleClass('active');
+    $('.header__scroll').css({'transform' : 'translateY(0%)'});
     return false;
   });
 }

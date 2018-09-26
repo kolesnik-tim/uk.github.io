@@ -92,10 +92,7 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
   }
 });
 
-//parallax
-if($('div').is('#water-triger')) {
-  
-}
+
 //scroll
  
 $('.scroll').on('click','a', function(event) {
@@ -109,10 +106,10 @@ $('.scroll').on('click','a', function(event) {
 
 $(window).on('scroll', function() {
   if($(window).scrollTop() >= 150) {
-    $('.header').addClass('active');
+    $('.header').addClass('scroll');
     $('.header__scroll').css({'transform' : 'translateY(0%)'});
   } else {
-    $('.header').removeClass('active');
+    $('.header').removeClass('scroll');
     $('.header__scroll').css({'transform' : 'translateY(-200%)'});
   }
 });
