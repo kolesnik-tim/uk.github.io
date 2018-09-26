@@ -108,11 +108,11 @@ $('.scroll').on('click','a', function(event) {
 
 
 $(window).on('scroll', function() {
-  if($('html, body').scrollTop() >= 150) {
-    $('.header').addClass('fixed');
+  if($(window).scrollTop() >= 150) {
+    $('.header').addClass('active');
     $('.header__scroll').css({'transform' : 'translateY(0%)'});
   } else {
-    $('.header').removeClass('fixed');
+    $('.header').removeClass('active');
     $('.header__scroll').css({'transform' : 'translateY(-200%)'});
   }
 });
