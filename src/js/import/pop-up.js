@@ -1,40 +1,52 @@
 import Swiper from 'swiper';
 //menu
-if($(window).width() < 767) {
-  $('.menu-open').on('click', function() {
-    $('body').addClass('no-scroll');
-    $('.menu').fadeToggle();
-    $('.header__toolbar').addClass('active');
-    $('.header__scroll').css({'transform' : 'translateY(-200%)'});
-    return false;
-  });
-}
-$('.menu-close').on('click', function() {
-  $('.menu').fadeOut();
-  $('body').removeClass('no-scroll');
-  $('.header__toolbar').removeClass('active');
-  $('.header__scroll').css({'transform' : 'translateY(0%)'});
-  return false;
-});
+let toolbar = $('.header__toolbar');
+let scrollHeader = $('.header__scroll');
+let menu = $('.menu');
+let menuOpen = $('.menu-open');
 
-if($(window).width() > 767) {
-  $('.menu-open').on('click', function() {
-    $('.menu-open').toggleClass('active');
-    $('body').toggleClass('no-scroll');
-    $('.menu').fadeToggle();
-    $('.header').toggleClass('active');
-    $('.header__scroll').css({'transform' : 'translateY(0%)'});
+if($(window).width() < 767) {
+  menuOpen.on('click', function() {
+    $('body').addClass('no-scroll');
+    menu.fadeToggle();
+    toolbar.addClass('active');
+    scrollHeader.css({'transform' : 'translateY(-200%)'});
     return false;
   });
-}
-if($(window).width() < 767) {
-  $('.menu__block h4').on('click', function() {
+  $('.menu__block h4').on('click', function(event) {
     event.preventDefault();
     $(this).next('ul').slideToggle();
     $(this).toggleClass('active');
     return false;
   });
 }
+
+if($(window).width() > 767) {
+  menuOpen.on('click', function() {
+    menuOpen.toggleClass('active');
+    $('body').toggleClass('no-scroll');
+    menu.fadeToggle();
+    $('.header').toggleClass('active');
+    if($(window).scrollTop() <= 150) {
+      if(menuOpen.hasClass('active')) {
+        scrollHeader.css({'transform' : 'translateY(0%)'});
+      } else{
+        scrollHeader.css({'transform' : 'translateY(-200%)'});
+      }
+    }
+    return false;
+  });
+}
+
+$('.menu-close').on('click', function() {
+  menu.fadeOut();
+  $('body').removeClass('no-scroll');
+  toolbar.removeClass('active');
+  if($(window).scrollTop() >= 150) {
+    scrollHeader.css({'transform' : 'translateY(0%)'});
+  }
+  return false;
+});
 
 
 
