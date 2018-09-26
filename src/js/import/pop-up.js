@@ -5,6 +5,7 @@ if($(window).width() < 767) {
     $('body').addClass('no-scroll');
     $('.menu').fadeToggle();
     $('.header__toolbar').addClass('active');
+    $('.header__scroll').css({'transform' : 'translateY(-200%)'});
     return false;
   });
 }
@@ -12,6 +13,7 @@ $('.menu-close').on('click', function() {
   $('.menu').fadeOut();
   $('body').removeClass('no-scroll');
   $('.header__toolbar').removeClass('active');
+  $('.header__scroll').css({'transform' : 'translateY(0%)'});
   return false;
 });
 
